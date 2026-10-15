@@ -1,0 +1,73 @@
+# Outlander (non-PHEV) service 21 signal definitions used by PHEV Link.
+#
+# Adapted from the OBDb signal set for the Mitsubishi Outlander:
+#   https://github.com/OBDb/Mitsubishi-Outlander, signalsets/v3/default.json
+#   (commit 2a1fef2f4916048bd43ac7f24ae2fe813b6c6099), by the OBDb contributors.
+# Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Changes: a subset only (no signals that need a diagnostic session, no diesel/turbo-only or
+# 4th-generation signals); converted from JSON to this table; new ids, names and groups; poll intervals added.
+# This file, and only this file, is shared under CC BY-SA 4.0. You may copy, change and share it under
+# those terms. The rest of PHEV Link is not covered by this licence.
+#
+# Columns (tab-separated): group, id, ecu, pid (hex, request 21 <pid>), bit offset after "61 <pid>",
+# bit length, mul, div, add (value = raw * mul / div + add), unit, min, max, poll seconds, flag (1 = on/off bit),
+# verified (MY2011 = OBDb marks it verified for model year 2011, no = unverified), OBDb id, name.
+engine	ecm.battery_v	ENGINE	01	0	8	18	255	0	V	0	18	2	0	MY2011	OUTLANDER_MPI_BATTERY_V	12 V battery voltage (engine ECU)
+engine	ecm.speed	ENGINE	01	8	8	2	1	0	km/h	0	200	2	0	MY2011	OUTLANDER_MPI_VSS	Vehicle speed (engine ECU)
+engine	ecm.crank_rpm	ENGINE	01	16	16	1	8	0	rpm	0	8000	2	0	MY2011	OUTLANDER_MPI_CRANK_ANGLE_SNS	Engine speed (crank angle sensor)
+engine	ecm.target_idle_rpm	ENGINE	01	32	8	2000	255	0	rpm	0	2000	2	0	MY2011	OUTLANDER_MPI_TGT_IDLE_RPM	Target idle speed
+engine	ecm.iat	ENGINE	02	0	8	1	1	-40	°C	-40	120	5	0	MY2011	OUTLANDER_MPI_IAT	Intake air temperature (engine ECU)
+engine	ecm.coolant	ENGINE	02	8	8	1	1	-40	°C	-40	215	5	0	MY2011	OUTLANDER_MPI_ECT	Coolant temperature (engine ECU)
+engine	ecm.map	ENGINE	03	0	16	1	512	0	kPa	0	126	2	0	MY2011	OUTLANDER_MPI_MANIFOLD_PRES	Manifold pressure
+engine	ecm.afs_v	ENGINE	03	16	8	5	255	0	V	0	5	2	0	MY2011	OUTLANDER_MPI_AIR_FLOW_SNS_V	Air flow sensor voltage
+engine	ecm.load	ENGINE	03	32	8	100	255	0	%	0	100	2	0	MY2011	OUTLANDER_MPI_ENGINE_LOAD	Engine load (engine ECU)
+engine	ecm.tps_main_v	ENGINE	04	0	8	5	255	0	V	0	5	2	0	MY2011	OUTLANDER_MPI_THROTTLE_POSITION_MAIN	Throttle position sensor (main)
+engine	ecm.tps_sub_v	ENGINE	04	8	8	5	255	0	V	0	5	2	0	MY2011	OUTLANDER_MPI_THROTTLE_POSITION_SUB	Throttle position sensor (sub)
+engine	ecm.tps_target_v	ENGINE	04	16	8	5	255	0	V	0	5	2	0	MY2011	OUTLANDER_MPI_TGT_THROTTLE_POSITION_MAIN	Target throttle position (main)
+engine	ecm.app_main_v	ENGINE	04	24	8	5	255	0	V	0	5	2	0	MY2011	OUTLANDER_MPI_ACCELERATOR_POSITION_MAIN	Accelerator pedal sensor (main)
+engine	ecm.app_sub_v	ENGINE	04	32	8	5	255	0	V	0	5	2	0	MY2011	OUTLANDER_MPI_ACCELERATOR_POSITION_SUB	Accelerator pedal sensor (sub)
+engine	ecm.ign_advance	ENGINE	05	0	8	1	1	-20		-20	235	2	0	MY2011	OUTLANDER_MPI_IGN_ADVANCE	Ignition advance
+engine	ecm.injector_ms	ENGINE	05	8	8	1	4	0	ms	0	63.75	2	0	MY2011	OUTLANDER_MPI_INJECTOR_DRIVE_TIME	Injector drive time
+engine	ecm.stft	ENGINE	07	8	8	20	51	-50.196078	%	-50.2	49.8	5	0	MY2011	OUTLANDER_MPI_SHORT_TERM_FUEL_CORRECTION	Short term fuel correction
+engine	ecm.ltft	ENGINE	07	16	8	20	51	-50.196078	%	-50.2	49.8	5	0	MY2011	OUTLANDER_MPI_LONG_TERM_FUEL_CORRECTION	Long term fuel correction
+engine	ecm.knock_retard	ENGINE	08	8	8	90	255	0		0	90	5	0	MY2011	OUTLANDER_MPI_DETONATION_RETARD	Knock (detonation) retard
+engine	ecm.knock_learned	ENGINE	08	16	8	100	255	0	%	0	100	5	0	MY2011	OUTLANDER_MPI_DETONATION_CTRL_LEARNED	Knock control learned value
+engine	ecm.fan_duty	ENGINE	0E	0	8	0.3922	1	0	%	0	100.011	5	0	MY2011	OUTLANDER_MPI_COOLING_FAN_DUTY	Cooling fan duty
+engine	ecm.purge	ENGINE	0F	0	8	100	255	0	%	0	100	5	0	MY2011	OUTLANDER_MPI_PURGE_VALVE_CTRL	Purge valve control
+engine	ecm.throttle_target_v	ENGINE	12	0	16	1	512	0	V	0	5	2	0	MY2011	OUTLANDER_MPI_TGT_THROTTLE_CTRL	Target throttle control
+engine	ecm.throttle_servo	ENGINE	12	16	8	100	255	0	%	0	100	2	0	MY2011	OUTLANDER_MPI_THROTTLE_CTRL_SERVO	Throttle control servo
+engine	ecm.calc_load	ENGINE	1A	0	8	100	255	0	%	0	100	2	0	MY2011	OUTLANDER_MPI_CALCULATED_LOAD	Calculated load (engine ECU)
+engine	ecm.abs_load	ENGINE	1A	8	8	100	255	0	%	0	100	2	0	MY2011	OUTLANDER_MPI_ABSOLUTE_LOAD	Absolute load (engine ECU)
+engine	ecm.idle	ENGINE	1D	0	1	1	1	0		0	1	2	1	MY2011	OUTLANDER_MPI_IDLE_STS	Idle status
+engine	ecm.cranking	ENGINE	1D	1	1	1	1	0		0	1	2	1	MY2011	OUTLANDER_MPI_CRANKING_SIG_ST	Cranking signal
+engine	ecm.off_condition	ENGINE	1D	4	1	1	1	0		0	1	2	1	MY2011	OUTLANDER_MPI_OFF_COND	Off condition
+engine	ecm.neutral	ENGINE	1D	6	1	1	1	0		0	1	2	1	MY2011	OUTLANDER_MPI_NEUTRAL_STS	Neutral status
+engine	ecm.ignition_switch	ENGINE	1D	15	1	1	1	0		0	1	2	1	MY2011	OUTLANDER_MPI_IGN_SWITCH	Ignition switch
+engine	ecm.brake_closed	ENGINE	1D	30	1	1	1	0		0	1	2	1	MY2011	OUTLANDER_MPI_NORMAL_BRAKE_CLOSED_STS	Normal brake closed status
+engine	ecm.brake_switch	ENGINE	1D	31	1	1	1	0		0	1	2	1	MY2011	OUTLANDER_MPI_BRAKE_SWITCH	Brake switch
+engine	ecm.relay_engine	ENGINE	1E	2	1	1	1	0		0	1	5	1	MY2011	OUTLANDER_MPI_ENGINE_CTRL_RELAY	Engine control relay
+engine	ecm.relay_throttle	ENGINE	1E	5	1	1	1	0		0	1	5	1	MY2011	OUTLANDER_MPI_THROTTLE_CTRL_RELAY	Throttle control relay
+engine	ecm.relay_fuel_pump	ENGINE	1E	6	1	1	1	0		0	1	5	1	MY2011	OUTLANDER_MPI_FUEL_PUMP_RELAY	Fuel pump relay
+engine	ecm.relay_ac	ENGINE	1E	7	1	1	1	0		0	1	5	1	MY2011	OUTLANDER_MPI_A_C_COMPRESSOR_RELAY	A/C compressor relay
+cluster	cluster.fuel_level	CLUSTER	A3	16	8	1	1	-16	%	0	100	30	0	no	OUTLANDER_FLI	Fuel level (cluster)
+cluster	cluster.odometer	CLUSTER	AD	0	24	1	1	0	km	0	16777215	60	0	no	OUTLANDER_ODO	Odometer (cluster)
+cluster	cluster.voltage	CLUSTER	AF	0	8	1	10	0	V	0	25.5	10	0	no	OUTLANDER_DASHBOARD_V	Cluster supply voltage
+cluster	cluster.service_km	CLUSTER	BC	0	8	100	1	0	km	0	25500	300	0	no	OUTLANDER_MILEAGE_BEFORE_SERVICING	Distance to next service
+cluster	cluster.service_months	CLUSTER	BC	32	8	1	1	0	months	0	255	300	0	no	OUTLANDER_PERIOD_BEFORE_SERVICING_MONTHS	Months to next service
+climate	ac.interior_temp	AIRCON	10	0	8	1	4	-16	°C	-16	47.75	10	0	no	OUTLANDER_AC_INTERIOR_T	Interior temperature
+climate	ac.air_thermo	AIRCON	10	8	8	1	4	-16	°C	-16	47.75	10	0	no	OUTLANDER_AC_AIR_THERMO_SNS	Air temperature sensor (A/C)
+climate	ac.coolant	AIRCON	10	32	8	1	1	-40	°C	-40	215	10	0	no	OUTLANDER_AC_ECT	Engine coolant temperature (A/C ECU)
+climate	ac.ambient_temp	AIRCON	11	0	8	1	2	-40	°C	-40	87.5	10	0	no	OUTLANDER_AC_AAT	Ambient temperature (A/C ECU)
+climate	ac.switch	AIRCON	23	6	1	1	1	0		0	1	5	1	no	OUTLANDER_AC_SWITCH	A/C switch
+climate	ac.compressor_request	AIRCON	23	7	1	1	1	0		0	1	5	1	no	OUTLANDER_AC_A_C_COMPRESSOR_DRIVE_REQUEST	A/C compressor drive request
+climate	ac.driver_setting	AIRCON	34	0	8	1	2	0	°C	0	50	10	0	no	OUTLANDER_AC_DRIVER_T	Driver temperature setting
+climate	ac.passenger_setting	AIRCON	34	8	8	1	2	0	°C	0	50	10	0	no	OUTLANDER_AC_PASSENGER_T	Passenger temperature setting
+abs	abs.wheel_fl	ABS	01	0	16	1	100	0	km/h	0	655.35	1	0	no	OUTLANDER_ABS_FL_VSS	Wheel speed front left
+abs	abs.wheel_fr	ABS	01	16	16	1	100	0	km/h	0	655.35	1	0	no	OUTLANDER_ABS_FR_VSS	Wheel speed front right
+abs	abs.wheel_rl	ABS	01	32	16	1	100	0	km/h	0	655.35	1	0	no	OUTLANDER_ABS_RL_VSS	Wheel speed rear left
+abs	abs.wheel_rr	ABS	01	48	16	1	100	0	km/h	0	655.35	1	0	no	OUTLANDER_ABS_RR_VSS	Wheel speed rear right
+awc	awc.accessory_v	AWC	0D	24	8	1	10	0	V	0	25.5	10	0	no	OUTLANDER_AWC_ACC_V	Accessory voltage (AWC)
+awc	awc.odometer	AWC	0D	40	24	1	10	0	km	0	1677721.5	10	0	no	OUTLANDER_AWC_ODO	Odometer (AWC)
+awc	awc.ambient_temp	AWC	0D	64	8	1	2	-40	°C	-40	87.5	10	0	no	OUTLANDER_AWC_AAT	Ambient temperature (AWC)
+awc	awc.module_v	AWC	13	8	16	1	64	0	V	0	1023	10	0	no	OUTLANDER_AWC_ECU_V	AWC module voltage

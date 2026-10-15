@@ -1,0 +1,41 @@
+PHEV Link
+Copyright (c) 2026 Anwo91. All rights reserved.
+
+This software, meaning the PHEV Link Android app, the PHEV Link bridge for the Raspberry Pi, and their
+source code, data, texts, translations and graphics, is proprietary. No right to copy, modify, publish,
+distribute, sublicense or sell it, in whole or in part, is granted except as written below.
+
+1. Using the released builds
+
+   You may download the builds that Anwo91 publishes (the app's APK file and the bridge files) and
+   install and use them for your own, non-commercial use. You may not sell, rent out or redistribute
+   them, put them up for download elsewhere, or remove or change any copyright notice in them.
+
+2. Material that is not covered by this licence
+
+   - core/src/main/resources/io/github/anwo91/phevlink/core/obd/obdb-outlander.tsv is adapted from the
+     OBDb project and is licensed under Creative Commons Attribution-ShareAlike 4.0 International
+     (CC BY-SA 4.0). See the header of that file. You may use that file under those terms.
+   - Third-party components that are bundled with the software keep their own licences. They are
+     listed in THIRD_PARTY_NOTICES.md and, in the app, under Settings > About > Licences.
+
+3. Earlier versions
+
+   Versions up to and including 1.0.91 were published under the GNU General Public License,
+   version 3 or later. Copies of those versions that you received under that licence stay under it.
+   This licence applies to later versions.
+
+4. No warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+   NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+   WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+   SOFTWARE OR THE USE OF OR OTHER DEALINGS IN THE SOFTWARE. You use the software to read and control
+   your vehicle at your own risk. Nothing in this licence limits rights you have under mandatory
+   consumer law.
+
+Mitsubishi, Outlander and Outlander PHEV are trademarks of Mitsubishi Motors Corporation. PHEV Link is
+not affiliated with, endorsed by or sponsored by Mitsubishi Motors Corporation.
+
+Contact: https://github.com/Anwo91/phev-remote-plus

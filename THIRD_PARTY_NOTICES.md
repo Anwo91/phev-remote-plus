@@ -12,21 +12,13 @@ ships inside the app (Settings → About → Licences) and in the bridge bundle 
 - Copyright JetBrains s.r.o. and Kotlin Programming Language contributors
 - License: Apache License 2.0
 
-### OBDb signal definitions
+### Former: OBDb signal definitions (1.0.92 to 1.0.98)
 
-`core/src/main/resources/io/github/anwo91/phevlink/core/obd/obdb-outlander.tsv` holds the engine ECU service 21
-values, instrument cluster, air conditioning, ABS wheel speeds and AWC signals of the non-PHEV Outlander. The app
-reads that file at run time; no other part of PHEV Link is derived from OBDb.
-
-- Project: OBDb, https://github.com/OBDb/Mitsubishi-Outlander
-- File used: `signalsets/v3/default.json` (commit `2a1fef2f4916048bd43ac7f24ae2fe813b6c6099`)
-- Copyright: the OBDb contributors
-- License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0),
-  https://creativecommons.org/licenses/by-sa/4.0/. The adapted file is shared under the same licence (it is
-  published next to the releases).
-- Changes: only a subset was taken (no signals that need a diagnostic session, no diesel/turbo-only or
-  4th-generation signals), converted from JSON to a table with new ids, names and groups. Every one is marked
-  experimental in the app, because the set was written for the non-PHEV Outlander.
+Versions 1.0.92 to 1.0.98 carried `obdb-outlander.tsv`, adapted from OBDb
+(https://github.com/OBDb/Mitsubishi-Outlander, © the OBDb contributors) under CC BY-SA 4.0. Later versions use
+their own table, `outlander-signals.tsv`, written in a clean room from a facts-only description (which control unit,
+which bytes, which scaling) without access to the OBDb data; the record is kept in `docs/cleanroom/obd-signals/`.
+Thanks to the OBDb contributors, whose work first showed where these values live.
 
 ## In the app
 

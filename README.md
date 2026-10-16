@@ -2,7 +2,7 @@
 
 > This repository holds PHEV Link's releases (download the newest APK and bridge files under **Releases**).
 > PHEV Link is proprietary software, © 2026 Anwo91, all rights reserved — see `LICENSE`. The source code is not
-> public. `obdb-outlander.tsv` is shared under CC BY-SA 4.0, see `THIRD_PARTY_NOTICES.md`.
+> public. Third-party notices: `THIRD_PARTY_NOTICES.md`.
 
 A from-scratch replacement for Mitsubishi's **Outlander PHEV Remote Ctrl** app, built for the 2014–2017 Outlander PHEV
 (2018+ cars use the same protocol family and are supported by the protocol layer, but less tested).
@@ -372,8 +372,9 @@ sending anything that isn't a read request.
   contributors; the key schedule was worked out by @zivillian) and [phev-remote](https://github.com/phev-remote)
   (Jamie Nuttall). PHEV Link's protocol code is its own implementation and contains no code from those projects.
 - Weather: [MET Norway](https://api.met.no/) Locationforecast (CC BY 4.0). Maps: © OpenStreetMap contributors.
-- Outlander signal definitions: [OBDb](https://github.com/OBDb) (CC BY-SA 4.0), kept in their own data file;
-  drive-battery values: owners on myoutlanderphev.com. Tips research sources are listed with each tip. See
+- Drive-battery values: owners on myoutlanderphev.com. Thanks to [OBDb](https://github.com/OBDb), whose
+  Outlander signal set first showed where the engine, cluster and climate values live (the app's own table
+  replaced it after 1.0.98). Tips research sources are listed with each tip. See
   [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 Not affiliated with or endorsed by Mitsubishi Motors. Use at your own risk.
@@ -382,4 +383,4 @@ Not affiliated with or endorsed by Mitsubishi Motors. Use at your own risk.
 
 Proprietary: © 2026 Anwo91, all rights reserved. See `LICENSE`. The published builds may be installed and used for
 your own, non-commercial use. Versions up to and including 1.0.91 were released under GPL-3.0-or-later; copies of
-those stay under that licence. `obdb-outlander.tsv` is CC BY-SA 4.0 (see its header).
+those stay under that licence.

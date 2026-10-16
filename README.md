@@ -59,9 +59,11 @@ The main goal: **a connection that just works.**
   Or straight into **Google Home** (also Apple Home, Alexa) without Home Assistant: the bridge speaks Matter — scan
   the code in the app.
 - **Car phone** (PHEV Link Plus) — a spare Android phone left in the car holds the car's Wi-Fi all the time and runs the
-  bridge itself; your own phone reaches it over Tailscale from anywhere. A bridge at home (for Google Home and Home
-  Assistant) can follow it instead of joining the car's Wi-Fi, and the OBD adapter connected to the car phone can be
-  used from your own phone. Settings → Car phone.
+  bridge itself; your own phone reaches it over Tailscale from anywhere. Tailscale is built in on the car phone (the
+  Tailscale app's VPN would keep the app off the car's Wi-Fi), signed in once with a link. A bridge at home (for Google
+  Home and Home Assistant) is taken over by itself: it goes through the car phone instead of joining the car's Wi-Fi.
+  The OBD adapter connected to the car phone can be used from your own phone, and the car phone updates itself (or
+  when your phone asks). Settings → Car phone shows what is left to set up.
 - **Charge timer** — set the car's own charge timer (2014–2017 cars): up to three time windows, each on the days you
   pick, plus "full charge" days; the car keeps it and waits for the window when plugged in. "Charge now" skips it once.
 - **Departure timers** — "ready to leave at 07:30 on weekdays": 35 min before, the app checks the forecast and starts

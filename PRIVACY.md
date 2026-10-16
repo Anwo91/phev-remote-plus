@@ -1,6 +1,6 @@
 # PHEV Link — privacy policy
 
-*Last updated: 16 October 2026*
+*Last updated: 16 October 2026 (car phone mode added)*
 
 PHEV Link is an app for the Mitsubishi Outlander PHEV (2014–2017), with an optional "bridge" (a small computer such as a
 Raspberry Pi) that you run at home. It is made by Anwo91, a sole proprietorship in Norway ("we").
@@ -17,6 +17,8 @@ for the reasons given. The Google Play version also shows ads from Google until 
 | Precise location, also in the background (optional, off by default) | To measure trips (route and distance) for the electric range | Stays on your phone. Recorded only while a trip is being measured, and only after you allow it. |
 | Approximate home location (optional) | The weather forecast, used for the range estimate | The coordinates are sent to MET Norway (api.met.no) to get the forecast. |
 | The area around a trip's route | To draw the route map | Map pictures are fetched from OpenStreetMap's tile servers (tile.openstreetmap.org), which see which map area is shown and your IP address. |
+| Nearby Wi-Fi networks (car phone mode only, optional) | On a spare phone left in the car: to tell when the car is at home (your home Wi-Fi in sight), so charges are kept and smart charging runs only there | Stays on that phone. Android counts seeing Wi-Fi networks as location, so it asks for location access "all the time". |
+| The car phone's bridge (car phone mode only) | Your own phone reaches the car through the spare phone in the car | Only between your own devices: over Tailscale (a private network you set up with your own Tailscale account) or your home Wi-Fi. The car phone never answers on mobile data. |
 | Bluetooth devices | To connect to an OBD adapter, and to notice when your phone joins the car's Bluetooth | Stays on your phone. |
 | Your electricity price area | Charging costs and smart charging | Your bridge fetches the day's prices for that area from hvakosterstrommen.no (Norway) or elprisetjustnu.se (Sweden). Only the area and the date are sent. |
 | The app's own log | To find out what went wrong | Stays on your phone. It only leaves the phone if you share it yourself (Settings → Help and support). |

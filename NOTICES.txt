@@ -39,6 +39,18 @@ Maps
   Map tiles and data (c) OpenStreetMap contributors, https://www.openstreetmap.org/copyright,
   available under the Open Database License (ODbL).
 
+Electricity prices (shown with smart charging)
+  Prices provided by Hva koster strømmen.no (https://www.hvakosterstrommen.no) for Norway and by
+  Elpriset just nu.se (https://www.elprisetjustnu.se) for Sweden, fetched by the bridge.
+
+
+== In the Google Play version of the app ==
+
+Google Mobile Ads SDK, Google User Messaging Platform SDK and Google Play Billing Library
+  Copyright Google LLC. Used under the Android Software Development Kit License and the Google APIs
+  Terms of Service, https://developers.google.com/terms. Open-source parts they include are listed
+  in their own notices.
+
 
 == In the bridge (Raspberry Pi) ==
 

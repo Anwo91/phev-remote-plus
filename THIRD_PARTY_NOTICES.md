@@ -44,6 +44,17 @@ Thanks to the OBDb contributors, whose work first showed where these values live
   (https://www.elprisetjustnu.se, Sweden), fetched by the bridge; both are free for any use and ask to be named where
   the prices are shown, which the app does under the price chart.
 
+### Built-in Tailscale (car phone mode, 64-bit phones)
+
+The car phone joins the owner's tailnet with Tailscale's `tsnet` library, built from `tailnet/` with gomobile into
+`libgojni.so` (the Tailscale app's VPN would keep the app off the car's Wi-Fi). No logs are sent to Tailscale.
+
+- Tailscale, https://github.com/tailscale/tailscale — © Tailscale Inc & contributors — BSD 3-Clause License
+- wireguard-go (Tailscale's fork) — © WireGuard LLC — MIT License
+- gVisor network stack, https://gvisor.dev — © The gVisor Authors — Apache License 2.0
+- Go standard library and golang.org/x modules (crypto, net, sys, text, time, mobile …) — © The Go Authors — BSD 3-Clause
+- Other Go modules it pulls in, each under a BSD, MIT, ISC or Apache 2.0 licence: see `tailnet/go.sum`
+
 ### Google Play version only
 
 - Google Mobile Ads SDK (`com.google.android.gms:play-services-ads`), Google User Messaging Platform

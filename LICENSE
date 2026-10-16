@@ -15,9 +15,6 @@ distribute, sublicense or sell it, in whole or in part, is granted except as wri
 
 2. Material that is not covered by this licence
 
-   - core/src/main/resources/io/github/anwo91/phevlink/core/obd/obdb-outlander.tsv is adapted from the
-     OBDb project and is licensed under Creative Commons Attribution-ShareAlike 4.0 International
-     (CC BY-SA 4.0). See the header of that file. You may use that file under those terms.
    - Third-party components that are bundled with the software keep their own licences. They are
      listed in THIRD_PARTY_NOTICES.md and, in the app, under Settings > About > Licences.
 
@@ -25,7 +22,9 @@ distribute, sublicense or sell it, in whole or in part, is granted except as wri
 
    Versions up to and including 1.0.91 were published under the GNU General Public License,
    version 3 or later. Copies of those versions that you received under that licence stay under it.
-   This licence applies to later versions.
+   Versions 1.0.92 to 1.0.98 included a data file (obdb-outlander.tsv) under Creative Commons
+   Attribution-ShareAlike 4.0; that file stays under that licence. Later versions contain no such
+   file, and this licence applies to all of them except the components in section 2.
 
 4. No warranty
 

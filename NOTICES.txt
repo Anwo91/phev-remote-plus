@@ -15,13 +15,6 @@ Kotlin standard library and kotlinx.coroutines
   Copyright JetBrains s.r.o. and Kotlin Programming Language contributors.
   Licensed under the Apache License, Version 2.0 (text below).
 
-Outlander signal definitions (the file obdb-outlander.tsv)
-  Adapted from OBDb, https://github.com/OBDb/Mitsubishi-Outlander, by the OBDb contributors.
-  Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0),
-  https://creativecommons.org/licenses/by-sa/4.0/
-  Changes: a subset of the signals, converted to a table, with new ids, names and groups. The adapted file
-  is shared under the same licence at https://github.com/Anwo91/phev-remote-plus/blob/main/obdb-outlander.tsv
-
 
 == In the app ==
 

@@ -58,6 +58,10 @@ The main goal: **a connection that just works.**
   Google Home and Alexa through Home Assistant. Set up from the app; the bridge can run the MQTT broker itself.
   Or straight into **Google Home** (also Apple Home, Alexa) without Home Assistant: the bridge speaks Matter — scan
   the code in the app.
+- **Car phone** (PHEV Link Plus) — a spare Android phone left in the car holds the car's Wi-Fi all the time and runs the
+  bridge itself; your own phone reaches it over Tailscale from anywhere. A bridge at home (for Google Home and Home
+  Assistant) can follow it instead of joining the car's Wi-Fi, and the OBD adapter connected to the car phone can be
+  used from your own phone. Settings → Car phone.
 - **Charge timer** — set the car's own charge timer (2014–2017 cars): up to three time windows, each on the days you
   pick, plus "full charge" days; the car keeps it and waits for the window when plugged in. "Charge now" skips it once.
 - **Departure timers** — "ready to leave at 07:30 on weekdays": 35 min before, the app checks the forecast and starts
@@ -346,6 +350,10 @@ supports custom CAN flow control (`ATFCSH`); many cheap "v1.5/v2.1" clones don't
 Known good: OBDLink LX / MX+ / CX, Vgate iCar 2 / iCar Pro, Konnwei KW902, Veepeak. Pair classic Bluetooth adapters in
 the phone's Bluetooth settings first; Bluetooth LE adapters are found with a scan in the app. The OBD socket is under the
 steering wheel. Unplug the adapter when the car stands for days (it draws from the 12 V battery).
+
+With a car phone (above), connect the adapter once in the car phone's own OBD tab; your own phone then picks
+"In the car" in its adapter list and uses it from anywhere — readings, fault codes, clearing and tests, a little slower
+than an adapter of its own. One phone at a time; the car phone's own OBD session steps aside while it is lent.
 
 The OBD side never writes to the car except "Clear codes" (OBD-II mode 04), which asks first. The terminal asks before
 sending anything that isn't a read request.

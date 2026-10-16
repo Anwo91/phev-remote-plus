@@ -46,6 +46,19 @@ reads that file at run time; no other part of PHEV Link is derived from OBDb.
   (https://www.openstreetmap.org/copyright). The app shows "© OpenStreetMap" on every map (tapping it opens that page),
   sends its own user agent and keeps fetched tiles for 30 days, as the OpenStreetMap tile usage policy asks.
 
+### Electricity prices (smart charging)
+
+- Prices provided by Hva koster strømmen.no (https://www.hvakosterstrommen.no, Norway) and Elpriset just nu.se
+  (https://www.elprisetjustnu.se, Sweden), fetched by the bridge; both are free for any use and ask to be named where
+  the prices are shown, which the app does under the price chart.
+
+### Google Play version only
+
+- Google Mobile Ads SDK (`com.google.android.gms:play-services-ads`), Google User Messaging Platform
+  (`com.google.android.ump:user-messaging-platform`) and Google Play Billing Library
+  (`com.android.billingclient:billing`), © Google LLC — Android Software Development Kit License and the Google APIs
+  Terms of Service (https://developers.google.com/terms). Not in the GitHub build.
+
 ## In the bridge (`bridge/matter`)
 
 The bridge's Matter program (`phev-matter.mjs`, which lets Google Home, Apple Home and Alexa add the car) is one file

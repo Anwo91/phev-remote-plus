@@ -65,7 +65,9 @@ The main goal: **a connection that just works.**
   The OBD adapter connected to the car phone can be used from your own phone, and the car phone updates itself (or
   when your phone asks). Setting it up: on the spare phone choose "This phone stays in the car" at the start; then, on
   your own phone on the same Wi-Fi, Settings → Car phone → Add a car phone sends it the car's Wi-Fi and the rest. The
-  car phone only shows its status; everything else (stay connected, updates, release) is on your own phone.
+  car phone only shows its status; everything else (stay connected, updates, release) is on your own phone. Your own
+  phone reaches the car phone from anywhere through Tailscale built into PHEV Link as well (sign in once on the car phone
+  card; no VPN, no Tailscale app needed) — or through the Tailscale app, if you prefer.
 - **Charge timer** — set the car's own charge timer (2014–2017 cars): up to three time windows, each on the days you
   pick, plus "full charge" days; the car keeps it and waits for the window when plugged in. "Charge now" skips it once.
 - **Departure timers** — "ready to leave at 07:30 on weekdays": 35 min before, the app checks the forecast and starts

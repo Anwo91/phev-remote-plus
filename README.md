@@ -63,7 +63,9 @@ The main goal: **a connection that just works.**
   Tailscale app's VPN would keep the app off the car's Wi-Fi), signed in once with a link. A bridge at home (for Google
   Home and Home Assistant) is taken over by itself: it goes through the car phone instead of joining the car's Wi-Fi.
   The OBD adapter connected to the car phone can be used from your own phone, and the car phone updates itself (or
-  when your phone asks). Settings → Car phone shows what is left to set up.
+  when your phone asks). Setting it up: on the spare phone choose "This phone stays in the car" at the start; then, on
+  your own phone on the same Wi-Fi, Settings → Car phone → Add a car phone sends it the car's Wi-Fi and the rest. The
+  car phone only shows its status; everything else (stay connected, updates, release) is on your own phone.
 - **Charge timer** — set the car's own charge timer (2014–2017 cars): up to three time windows, each on the days you
   pick, plus "full charge" days; the car keeps it and waits for the window when plugged in. "Charge now" skips it once.
 - **Departure timers** — "ready to leave at 07:30 on weekdays": 35 min before, the app checks the forecast and starts
@@ -353,7 +355,7 @@ Known good: OBDLink LX / MX+ / CX, Vgate iCar 2 / iCar Pro, Konnwei KW902, Veepe
 the phone's Bluetooth settings first; Bluetooth LE adapters are found with a scan in the app. The OBD socket is under the
 steering wheel. Unplug the adapter when the car stands for days (it draws from the 12 V battery).
 
-With a car phone (above), connect the adapter once in the car phone's own OBD tab; your own phone then picks
+With a car phone (above), choose the adapter once on the car phone's status screen; your own phone then picks
 "In the car" in its adapter list and uses it from anywhere — readings, fault codes, clearing and tests, a little slower
 than an adapter of its own. One phone at a time; the car phone's own OBD session steps aside while it is lent.
 

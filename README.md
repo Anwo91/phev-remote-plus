@@ -33,7 +33,7 @@ The main goal: **a connection that just works.**
   for a large view. Three styles (Settings → Car picture): from above, from the side, or a 3D model you turn with a
   finger (and tilt in the large view). What can be tapped shows as icons, as labels, or lights up when touched.
 - **Climate** — heat, cool or defrost for 10/20/30 minutes; **Smart** mode picks mode and duration from the outside
-  temperature (MET Norway forecast). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
+  temperature (MET Norway forecast), with a run time you can make shorter or longer (Settings → Smart climate run time). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
 - **Activity** — who did what with the car (each phone by the name you give it, also when used right next to the
   car) and what the car did: plugged in/out, charging started/stopped and why, every 10 %, a summary per charge
   (from → to %, time, ≈ kWh), climate, locks, doors, lights, power switch, alarm; plus the bridge's departures and its
@@ -62,7 +62,10 @@ The main goal: **a connection that just works.**
   bridge itself; your own phone reaches it over Tailscale from anywhere. Tailscale is built in on the car phone (the
   Tailscale app's VPN would keep the app off the car's Wi-Fi), signed in once with a link. A bridge at home (for Google
   Home and Home Assistant) is taken over by itself: it goes through the car phone instead of joining the car's Wi-Fi.
-  The OBD adapter connected to the car phone can be used from your own phone, and the car phone updates itself (or
+  The OBD adapter connected to the car phone can be used from your own phone; the car phone connects to it by itself
+  when the car is switched on (it starts charging from the car's USB, the car's Wi-Fi goes, or the car reports the
+  ignition on) and records the drive, whoever drives. Departures are started once, by the car phone. The car phone
+  updates itself (or
   when your phone asks). Setting it up: on the spare phone choose "This phone stays in the car" at the start; then, on
   your own phone on the same Wi-Fi, Settings → Car phone → Add a car phone sends it the car's Wi-Fi and the rest. The
   car phone only shows its status; everything else (stay connected, updates, release) is on your own phone. Your own

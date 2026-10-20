@@ -64,7 +64,8 @@ The main goal: **a connection that just works.**
   Home and Home Assistant) is taken over by itself: it goes through the car phone instead of joining the car's Wi-Fi.
   The OBD adapter connected to the car phone can be used from your own phone; the car phone connects to it by itself
   when the car is switched on (it starts charging from the car's USB, the car's Wi-Fi goes, or the car reports the
-  ignition on) and records the drive, whoever drives. Departures are started once, by the car phone. The car phone
+  ignition on) and records the drive, whoever drives. Your phone shows whether the car phone is on the car's Wi-Fi
+  (and since when not), can make it try again, and fetches its log to share. Departures are started once, by the car phone. The car phone
   updates itself (or
   when your phone asks). Setting it up: on the spare phone choose "This phone stays in the car" at the start; then, on
   your own phone on the same Wi-Fi, Settings → Car phone → Add a car phone sends it the car's Wi-Fi and the rest. The

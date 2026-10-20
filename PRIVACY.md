@@ -26,7 +26,7 @@ for the reasons given. The Google Play version also shows ads from Google until 
 | OBD readings through the car phone (car phone mode only, optional) | Your own phone reads the car's diagnostics (live values, fault codes, tests) through the OBD adapter connected to the car phone | Passed straight through between your own two phones, the same way as the car phone's bridge, with the bridge's key. Nothing is kept on the car phone. |
 | Bluetooth devices | To connect to an OBD adapter, and to notice when your phone joins the car's Bluetooth | Stays on your phone. |
 | Your electricity price area | Charging costs and smart charging | Your bridge fetches the day's prices for that area from hvakosterstrommen.no (Norway) or elprisetjustnu.se (Sweden). Only the area and the date are sent. |
-| The app's own log | To find out what went wrong | Stays on your phone. It only leaves the phone if you share it yourself (Settings → Help and support). |
+| The app's own log | To find out what went wrong | Stays on your phone. It only leaves the phone if you share it yourself (Settings → Help and support). The car phone's log can be fetched by your own paired phone (Settings → Car phone → Get its log), over the car phone's bridge, to share it from there. |
 | Google Home, Apple Home, Alexa, Home Assistant (optional) | Smart-home control of the car | Runs on your bridge in your home network, between the bridge and your smart-home system. |
 | Update checks | To offer new versions | The GitHub version of the app, and the bridge, ask GitHub (github.com) for the newest release. GitHub sees your IP address. The Google Play version is updated by Google Play. |
 

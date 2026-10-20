@@ -28,6 +28,11 @@ Thanks to the OBDb contributors, whose work first showed where these values live
 - Copyright The Android Open Source Project
 - License: Apache License 2.0
 
+### ZXing and ZXing Android Embedded (QR codes for "Add another phone")
+
+- ZXing core 3.5.3, https://github.com/zxing/zxing — Copyright ZXing authors — Apache License 2.0
+- ZXing Android Embedded 4.3.0, https://github.com/journeyapps/zxing-android-embedded — Copyright JourneyApps — Apache License 2.0
+
 ### Weather
 
 - Forecast data from MET Norway (Locationforecast, https://api.met.no/), CC BY 4.0 and NLOD 2.0.

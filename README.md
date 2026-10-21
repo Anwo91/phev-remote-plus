@@ -104,6 +104,12 @@ The main goal: **a connection that just works.**
   - **drive battery health** from the battery computer (BMU): charge level, capacity in Ah and % of new (38 Ah reference
     before model year 2017, 40 Ah from 2017, taken from the VIN), stored energy, pack voltage, highest/lowest cell and the
     cell difference, charge counters;
+  - **dashboard** (from the OBD overview, or the Dashboard shortcut on the Home car card): speed and engine dials, a
+    battery power meter (charging ↔ using, experimental: it checks its own scale and sign against the battery's stored
+    charge while driving and corrects itself), the drive battery, temperatures (coolant, intake, outside, cabin,
+    warmest/coldest battery module), fuel, 12 V, engine load, throttle, motor speeds and odometer. Live while an adapter
+    answers (this phone's, or the car phone's lent one); otherwise the last values seen on this phone, greyed. The
+    screen stays on while it is open;
   - **live values** from all control units that answer (standard OBD-II plus documented Mitsubishi values, each marked
     standard / owner-documented / experimental);
   - **fault codes** from all control units with a plain-language explanation of 3,500 codes (what it means, how serious,

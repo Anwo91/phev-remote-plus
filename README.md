@@ -105,6 +105,12 @@ The main goal: **a connection that just works.**
   - **fault codes** from all control units with a plain-language explanation of 3,500 codes (what it means, how serious,
     can I drive, likely causes, what to check first; 122 written by hand for this car), code lookup, and clearing of
     engine/emission codes behind a confirmation;
+  - **car health over time** (with a car phone, or a phone with its own adapter): every time the car is switched on
+    it notes the 12 V, the drive battery's health, capacity and cells, and once a day reads the fault codes of every
+    unit; parked, the car phone reads the 12 V battery at rest every 12 hours with the adapter alone (the car stays
+    asleep). The OBD tab shows the 12 V at rest with its last readings, the battery health month by month, a cell that
+    keeps coming out lowest, and each fault code's history (first seen, gone, came back). A low 12 V battery or a new
+    or returning fault code is a notification on every phone;
   - **guided live tests** you can do on the spot: full fault scan, 12 V battery, 12 V charging in READY (DC/DC), drive
     battery capacity, cell balance, EU-kontroll readiness, charging check, engine warm-up/thermostat, fuel trims and
     front/rear tyre match — each with step-by-step instructions and a pass/warning/fail verdict with explanation
@@ -299,12 +305,13 @@ What the car brings into Home Assistant (names in the app's language):
 
 | Kind | Entities |
 |---|---|
-| Sensors | battery %, electric range (from the shared full range), time to full, full at, charge timer, climate ends, last update |
+| Sensors | battery %, electric range (from the shared full range), time to full, full at, charge timer, climate ends, last update, energy charged (kWh, for the Energy dashboard) |
+| Diagnostic sensors | 12 V battery (now and at rest, and its state), drive battery health and capacity, cell spread, fault codes (the codes as an attribute), health checked (filled in by the car phone's OBD adapter) |
 | Binary sensors | charging, charging cable, lock, doors (each door as an attribute), theft alarm, switched on, at home, bridge link |
 | Switches | climate (mode and time from the shared one-tap choice, or the weather when smart), headlights, parking lights |
 | Selects | climate mode, climate time (shared with the phones' one-tap climate) |
 | Buttons | charge now, charge on timer, flash lights, refresh |
-| Event | "Car event": charge_started, charge_finished, charge_stopped, plugged, unplugged, climate_on/off/cancelled, alarm, locked, unlocked, door_open, doors_closed, car_home, car_away, departure_started/failed, left_unlocked, door_left_open, lights_left_on, command_failed, … |
+| Event | "Car event": charge_started, charge_finished, charge_stopped, plugged, unplugged, climate_on/off/cancelled, alarm, locked, unlocked, door_open, doors_closed, car_home, car_away, departure_started/failed, left_unlocked, door_left_open, lights_left_on, command_failed, car_health, … |
 
 Commands from Home Assistant run like a phone's and appear in the activity log as "Home Assistant". Retained command
 messages are never acted on (they would replay on every reconnect). Google Home and Alexa reach the car through Home

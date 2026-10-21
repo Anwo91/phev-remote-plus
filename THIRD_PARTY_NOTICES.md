@@ -82,6 +82,8 @@ built with esbuild from the packages below. It ships in the Raspberry Pi bundle,
 Everything else is PHEV Link's own work, © 2026 Anwo91, all rights reserved. That includes the car protocol
 implementation, the fault-code titles (`codes*.tsv`), the Mitsubishi code descriptions (`mitsubishi.tsv`), all
 explanations and translations, the vehicle-settings names and texts, the tips and the live tests.
+The fault-code titles, the component names in the explanations, the Mitsubishi code descriptions and the
+vehicle-settings names were written in a clean room (records in `docs/cleanroom/`).
 
 The fault-code explanations are general guidance only and do not replace a diagnosis by a qualified workshop. The
 meaning of a code can differ between manufacturers and model years. Work on the high-voltage system (orange cables,

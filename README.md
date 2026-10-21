@@ -26,14 +26,16 @@ The main goal: **a connection that just works.**
   OBD, else the forecast for home: about a fifth less at 0 °C). It can also learn from your own driving (Settings →
   Charging → Electric range): this phone's GPS measures each drive — started by the car's Bluetooth or by hand — or
   the OBD adapter reads the odometer, and each drive is paired with the battery level the car reported before and
-  after it. Recent drives count most; the drives are listed and can be forgotten.
+  after it. Recent drives count most; the drives are listed and can be forgotten. With petrol: once an OBD drive has
+  read the tank, the home screen also shows the total range — the tank (45 L) at what this car's engine burns
+  (learned from the drives, else about 6.5 L/100 km). With a car phone, the forecast is for where the car is.
 - **Car picture** — the car on the home screen shows its state at a glance: open doors, boot and bonnet, lights and
   hazards, the cabin glowing warm or cool while climate runs, the lock, and the charging cable (animated while
   charging). Tap a part to see what it means and act on it — switch the lights off, start climate, charge now; hold it
   for a large view. Three styles (Settings → Car picture): from above, from the side, or a 3D model you turn with a
   finger (and tilt in the large view). What can be tapped shows as icons, as labels, or lights up when touched.
 - **Climate** — heat, cool or defrost for 10/20/30 minutes; **Smart** mode picks mode and duration from the outside
-  temperature (MET Norway forecast), with a run time you can make shorter or longer (Settings → Smart climate run time). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
+  temperature (MET Norway forecast for where the car is — the car phone's location, else the saved place), with a run time you can make shorter or longer (Settings → Smart climate run time). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
 - **Activity** — who did what with the car (each phone by the name you give it, also when used right next to the
   car) and what the car did: plugged in/out, charging started/stopped and why, every 10 %, a summary per charge
   (from → to %, time, ≈ kWh), climate, locks, doors, lights, power switch, alarm; plus the bridge's departures and its

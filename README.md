@@ -82,7 +82,7 @@ The main goal: **a connection that just works.**
 - **Departure timers** — "ready to leave at 07:30 on weekdays": 35 min before, the app checks the forecast and starts
   defrost/heat/cool just long enough, so the car is ready when you walk out. Mild morning? It skips and tells you.
   With a bridge, departures are shared by all your phones and the bridge starts them itself while the car is home.
-- **One-tap everywhere** — home-screen widget (battery, charging, climate, preheat & refresh buttons), quick-settings tile
+- **One-tap everywhere** — home-screen widget in three sizes (battery, electric range, charging, climate, next departure, lock; preheat, flash-lights and refresh buttons; old data dimmed), quick-settings tile
   ("Preheat"), and long-press app shortcuts (preheat, stop, flash lights, refresh).
 - **Find my car** — flash the headlights.
 - **Alerts** — charging complete, charging stopped early (power cut, loose cable), cabin ready, climate stopped by the car,
@@ -96,7 +96,7 @@ The main goal: **a connection that just works.**
   headlights on exit, lights on remote unlock), locks (auto relock, unlock mode, auto unlock), lock/unlock beeps and horn
   answerback, wipers, turn signals, power windows and A/C behaviour; each change is confirmed by the car and saved.
   Also lists setting slots the car reports that Mitsubishi's app never names.
-- **OBD tab (ELM327 adapter)** — Bluetooth Classic, Bluetooth LE or Wi-Fi adapters, read-only:
+- **Health tab: OBD (ELM327 adapter)** — Bluetooth Classic, Bluetooth LE or Wi-Fi adapters, read-only:
   - **drive battery health** from the battery computer (BMU): charge level, capacity in Ah and % of new (38 Ah reference
     before model year 2017, 40 Ah from 2017, taken from the VIN), stored energy, pack voltage, highest/lowest cell and the
     cell difference, charge counters;

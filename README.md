@@ -92,6 +92,9 @@ The main goal: **a connection that just works.**
 - **Car clock** kept in sync (the car's own timers depend on it), like the official app does.
 - **Diagnostics** (Settings → Diagnostics) — live log of every connection step and packet (with raw hex), raw register
   table, raw register writes for experiments, previous-session log, one-tap share.
+  Every OBD reading goes into the log (what changed each second, all of them once a minute). Tools → Automatic log
+  upload (developer, off by default): with a GitHub token, this phone's, the Pi's and the car phone's logs go gzipped
+  to a private GitHub repository (`logs/<device>/<day>/`) every 30–60 min and after each trip and charge; 30 days kept.
 - **Vehicle settings** — the car's own customisable functions over Wi-Fi, like in the official app: lights (auto-cutout,
   headlights on exit, lights on remote unlock), locks (auto relock, unlock mode, auto unlock), lock/unlock beeps and horn
   answerback, wipers, turn signals, power windows and A/C behaviour; each change is confirmed by the car and saved.
@@ -339,6 +342,7 @@ like the bridge's own port, never open it to the internet.
 | POST | `/api/command` | `{"action":"climate","mode":"HEAT","minutes":20}` · `climate_off` · `headlights`/`parking_lights` + `on` · `locate` · `refresh` · `charge_now` · `ack_climate` · `register` · `unregister` · `sync_clock` · `raw` (+ `register`, `data` hex) |
 | POST | `/api/connect`, `/api/disconnect` | |
 | GET | `/api/log?n=300` | Diagnostic log; `&file=1` reads the log file, earlier runs included (the app's Share sends 1500 lines of it) |
+| GET/POST | `/api/logupload` | Automatic log upload (developer, off by default): on/off, last upload, files waiting; POST `{"enabled":true,"token":"…","now":true}` (the token is never answered back) |
 | GET | `/api/hello` | No token: identity for discovery + whether pairing is open |
 | POST | `/api/pair` | No token, header `X-PHEV-Pair: 1`: the token, once per boot, within 10 min of power-on |
 | GET | `/api/carwifi` | The bridge's own link to the car's Wi-Fi (interface, connected, IP, MAC, signal) |

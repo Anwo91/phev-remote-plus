@@ -24,7 +24,7 @@ Thanks to the OBDb contributors, whose work first showed where these values live
 
 ### Android Jetpack (AndroidX)
 
-- Core, Activity, Lifecycle, Compose UI, Material 3, Material Icons, Glance, DataStore
+- Core, Activity, Lifecycle, Compose UI, Material 3, Material Icons, Glance, DataStore, WorkManager
 - Copyright The Android Open Source Project
 - License: Apache License 2.0
 
@@ -58,7 +58,9 @@ The car phone joins the owner's tailnet with Tailscale's `tsnet` library, built 
 - wireguard-go (Tailscale's fork) — © WireGuard LLC — MIT License
 - gVisor network stack, https://gvisor.dev — © The gVisor Authors — Apache License 2.0
 - Go standard library and golang.org/x modules (crypto, net, sys, text, time, mobile …) — © The Go Authors — BSD 3-Clause
-- Other Go modules it pulls in, each under a BSD, MIT, ISC or Apache 2.0 licence: see `tailnet/go.sum`
+- Other Go modules it pulls in, each under a BSD, MIT, ISC or Apache 2.0 licence: listed with their full licence
+  texts at the end of the in-app list, generated at build time by `tools/go_notices.py` (the build stops if a
+  module has no licence file or a copyleft one)
 
 ### Google Play version only
 

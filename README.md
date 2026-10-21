@@ -387,6 +387,9 @@ steering wheel. Unplug the adapter when the car stands for days (it draws from t
 With a car phone (above), choose the adapter once on the car phone's status screen; your own phone then picks
 "In the car" in its adapter list and uses it from anywhere — readings, fault codes, clearing and tests, a little slower
 than an adapter of its own. One phone at a time; the car phone's own OBD session steps aside while it is lent.
+The car phone connects to the adapter by itself when the car is switched on and records the drive. If it can't (no
+adapter chosen, Bluetooth off or not allowed for PHEV Link), it shows a notification, its status screen has an "Allow
+Bluetooth" button, and your own phone's car phone card says so too.
 
 The OBD side never writes to the car except "Clear codes" (OBD-II mode 04), which asks first. The terminal asks before
 sending anything that isn't a read request.

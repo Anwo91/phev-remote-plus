@@ -45,7 +45,8 @@ The main goal: **a connection that just works.**
   a full charge ≈ 12 kWh on 2014–2018 cars, adjustable) and what it cost: the area's spot price hour by hour
   (hvakosterstrommen.no for Norway, elprisetjustnu.se for Sweden, with VAT and the Norwegian electricity support),
   Norgespris or a fixed price, plus your grid fee — with monthly totals. Trips: from leaving the bridge's reach until
-  back, with the battery used (≈ electric km). On Sunday evening every phone gets the week's summary. Settings →
+  back, with the battery used (≈ electric km). Drives recorded with the OBD adapter split the battery into used,
+  won back by regeneration and charged by the engine, next to the petrol burnt. On Sunday evening every phone gets the week's summary. Settings →
   Charging, or Home → More → Charging and trips.
 - **Smart charging** (opt-in, 2014–2017 cars, spot price) — when the car is plugged in at home, the bridge works out
   how long it needs to get full (from its own earlier charges) and moves tonight's charging to the cheapest hours

@@ -107,13 +107,15 @@ The main goal: **a connection that just works.**
     before model year 2017, 40 Ah from 2017, taken from the VIN), stored energy, pack voltage, highest/lowest cell and the
     cell difference, charge counters;
   - **dashboard** (from the OBD overview, or the Dashboard shortcut on the Home car card): speed and engine dials, a
-    battery power meter (charging ↔ using, experimental: it checks its own scale and sign against the battery's stored
-    charge while driving and corrects itself), the drive battery, temperatures (coolant, intake, outside, cabin,
+    battery power meter (charging ↔ using; its decoding was measured on a real car and is still checked against the
+    battery's stored charge while driving), the drive battery, temperatures (coolant, intake, outside, cabin,
     warmest/coldest battery module), fuel, 12 V, engine load, throttle, motor speeds and odometer. Live while an adapter
     answers (this phone's, or the car phone's lent one); otherwise the last values seen on this phone, greyed. The
-    screen stays on while it is open. While it is open, speed, engine and motor speeds and battery power are asked for
-    every round (about once a second, depending on the adapter) and the rest less often; through the car phone each
-    new round is sent the moment it is read. The power meter is marked "not checked yet" until a drive confirms it;
+    screen stays on while it is open. While it is open, speed and battery power are asked for every round (engine
+    speed too while the engine runs), engine and motor speeds take turns about every 2 s, and the rest less often;
+    through the car phone each new round is sent the moment it is read. Engine load and throttle read 0 while the
+    engine is stopped, the fuel gauge shows the median of the last minute (the fuel sloshes), and stored energy uses
+    the pack voltage at rest so it doesn't dip while accelerating. The power meter is marked "not checked yet" until a drive confirms it;
     the battery % is the battery controller's (it counts its reserve), with the car's own % beside it; the outside
     temperature shows the forecast when the car's value is far off it (the standard value reads the engine-bay air);
   - **live values** from all control units that answer (standard OBD-II plus documented Mitsubishi values, each marked

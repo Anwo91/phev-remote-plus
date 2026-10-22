@@ -97,7 +97,7 @@ The main goal: **a connection that just works.**
 - **Diagnostics** (Settings → Diagnostics) — live log of every connection step and packet (with raw hex), raw register
   table, raw register writes for experiments, previous-session log, one-tap share.
   Every OBD reading goes into the log (what changed each second, all of them once a minute). Tools → Automatic log
-  upload (developer, off by default): with a GitHub token, this phone's, the Pi's and the car phone's logs go gzipped
+  upload (developer, off by default, GitHub build only — not in the Google Play build): with a GitHub token, this phone's, the Pi's and the car phone's logs go gzipped
   to a private GitHub repository (`logs/<device>/<day>/`) every 30–60 min and after each trip and charge; 30 days kept.
 - **Vehicle settings** — the car's own customisable functions over Wi-Fi, like in the official app: lights (auto-cutout,
   headlights on exit, lights on remote unlock), locks (auto relock, unlock mode, auto unlock), lock/unlock beeps and horn

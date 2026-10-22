@@ -384,15 +384,23 @@ Known good: OBDLink LX / MX+ / CX, Vgate iCar 2 / iCar Pro, Konnwei KW902, Veepe
 the phone's Bluetooth settings first; Bluetooth LE adapters are found with a scan in the app. The OBD socket is under the
 steering wheel. Unplug the adapter when the car stands for days (it draws from the 12 V battery).
 
-With a car phone (above), choose the adapter once on the car phone's status screen; your own phone then picks
-"In the car" in its adapter list and uses it from anywhere — readings, fault codes, clearing and tests, a little slower
-than an adapter of its own. One phone at a time; the car phone's own OBD session steps aside while it is lent.
+With a car phone (above), choose the adapter once on the car phone's status screen, or from your own phone ("Choose its
+adapter" on the car phone card: the Bluetooth devices paired on the car phone). Your own phone then uses "The adapter in
+the car" (through the car phone) by itself. While the car phone is connected to the car (the car on), the OBD tab and the dashboard show the
+car phone's own connection live, and "Scan codes" and "Clear codes" run on the car phone, so it keeps recording the
+drive. When it isn't connected (the car off), Connect borrows the adapter through the car phone — readings, fault codes,
+clearing and tests, a little slower than an adapter of its own. One phone at a time; the car phone's own OBD session
+steps aside while it is lent, and takes the adapter back when the car is switched on (borrowed before that) to record
+the drive. "Borrow the adapter" borrows it while the car is on, for live tests and the terminal (no drive is recorded
+meanwhile). The shared view stops after 5 minutes with the app in the background.
 The car phone connects to the adapter by itself when the car is switched on and records the drive. If it can't (no
 adapter chosen, Bluetooth off or not allowed for PHEV Link), it shows a notification, its status screen has an "Allow
 Bluetooth" button, and your own phone's car phone card says so too.
 Your own phone's car phone card also lists every permission and setting the car phone depends on (Bluetooth, nearby
 Wi-Fi, location, notifications, battery, background use and data, alarms, installing updates, the motion sensor), each
 OK or with what to do on the car phone.
+The card also shows the car phone's own OBD connection: connected (recording a drive since when), or when the car last
+answered and how the last automatic try went.
 
 The OBD side never writes to the car except "Clear codes" (OBD-II mode 04), which asks first. The terminal asks before
 sending anything that isn't a read request.

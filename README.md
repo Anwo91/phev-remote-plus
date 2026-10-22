@@ -68,8 +68,9 @@ The main goal: **a connection that just works.**
   Tailscale app's VPN would keep the app off the car's Wi-Fi), signed in once with a link. A bridge at home (for Google
   Home and Home Assistant) is taken over by itself: it goes through the car phone instead of joining the car's Wi-Fi.
   The OBD adapter connected to the car phone can be used from your own phone; the car phone connects to it by itself
-  when the car is switched on (it starts charging from the car's USB, the car's Wi-Fi goes, or the car reports the
-  ignition on) and records the drive, whoever drives. Your phone shows whether the car phone is on the car's Wi-Fi
+  when the car is switched on and records the drive, whoever drives. The car's own ignition report (over its Wi-Fi)
+  decides; only while that isn't known do other signs count (it starts charging from the car's USB, moves, or the
+  car's Wi-Fi goes), so plugging the car in to charge doesn't set it trying. Your phone shows whether the car phone is on the car's Wi-Fi
   (and since when not), can make it try again, and fetches its log to share. Departures are started once, by the car phone. The car phone
   updates itself (or
   when your phone asks). Setting it up: on the spare phone choose "This phone stays in the car" at the start; then, on

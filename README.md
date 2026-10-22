@@ -111,7 +111,11 @@ The main goal: **a connection that just works.**
     charge while driving and corrects itself), the drive battery, temperatures (coolant, intake, outside, cabin,
     warmest/coldest battery module), fuel, 12 V, engine load, throttle, motor speeds and odometer. Live while an adapter
     answers (this phone's, or the car phone's lent one); otherwise the last values seen on this phone, greyed. The
-    screen stays on while it is open;
+    screen stays on while it is open. While it is open, speed, engine and motor speeds and battery power are asked for
+    every round (about once a second, depending on the adapter) and the rest less often; through the car phone each
+    new round is sent the moment it is read. The power meter is marked "not checked yet" until a drive confirms it;
+    the battery % is the battery controller's (it counts its reserve), with the car's own % beside it; the outside
+    temperature shows the forecast when the car's value is far off it (the standard value reads the engine-bay air);
   - **live values** from all control units that answer (standard OBD-II plus documented Mitsubishi values, each marked
     standard / owner-documented / experimental);
   - **fault codes** from all control units with a plain-language explanation of 3,500 codes (what it means, how serious,

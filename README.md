@@ -385,7 +385,11 @@ the phone's Bluetooth settings first; Bluetooth LE adapters are found with a sca
 steering wheel. Unplug the adapter when the car stands for days (it draws from the 12 V battery).
 
 With a car phone (above), choose the adapter once on the car phone's status screen, or from your own phone ("Choose its
-adapter" on the car phone card: the Bluetooth devices paired on the car phone). Your own phone then uses "The adapter in
+adapter" on the car phone card: the Bluetooth devices paired on the car phone, the adapters your phone has used, or
+what "Search near the car phone" finds). Nothing has to be done at the car phone: it pairs with a new adapter by itself,
+entering the PIN given on your phone (or 1234, 0000 and 6789 in turn). A car phone without an adapter takes the one
+your phone used by itself. Adapters asking for a pairing confirmation instead of a PIN still need one tap on the car
+phone (Android allows no app to answer that). Your own phone then uses "The adapter in
 the car" (through the car phone) by itself. While the car phone is connected to the car (the car on), the OBD tab and the dashboard show the
 car phone's own connection live, and "Scan codes" and "Clear codes" run on the car phone, so it keeps recording the
 drive. When it isn't connected (the car off), Connect borrows the adapter through the car phone — readings, fault codes,

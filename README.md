@@ -131,8 +131,8 @@ The main goal: **a connection that just works.**
     keeps coming out lowest, and each fault code's history (first seen, gone, came back). A low 12 V battery or a new
     or returning fault code is a notification on every phone;
   - **guided live tests** you can do on the spot: full fault scan, 12 V battery, 12 V charging in READY (DC/DC), drive
-    battery capacity, cell balance, EU-kontroll readiness, charging check, engine warm-up/thermostat, fuel trims and
-    front/rear tyre match — each with step-by-step instructions and a pass/warning/fail verdict with explanation
+    battery capacity, cell balance, EU-kontroll readiness, charging check, engine warm-up/thermostat, fuel trims,
+    front/rear tyre match and a button finder (maps every control unit and finds where the car reports its buttons) — each with step-by-step instructions and a pass/warning/fail verdict with explanation
     ;
   - CSV recording, adapter details, raw battery data and a terminal (non-read commands need a confirmation).
 - **Help & FAQ** (Settings, or Home → More) — answers to the common questions (connecting, the bridge, departures,

@@ -404,8 +404,9 @@ car phone's own connection live, and "Scan codes" and "Clear codes" run on the c
 drive. When it isn't connected (the car off), Connect borrows the adapter through the car phone — readings, fault codes,
 clearing and tests, a little slower than an adapter of its own. One phone at a time; the car phone's own OBD session
 steps aside while it is lent, and takes the adapter back when the car is switched on (borrowed before that) to record
-the drive. "Borrow the adapter" borrows it while the car is on, for live tests and the terminal (no drive is recorded
-meanwhile). The shared view stops after 5 minutes with the app in the background.
+the drive. "Borrow the adapter" borrows it while the car is on, for live tests and the terminal: your phone sends its
+readings back to the car phone, which keeps recording the drive as one trip (a live test pauses the speed readings, so
+run it parked). The shared view stops after 5 minutes with the app in the background.
 The car phone connects to the adapter by itself when the car is switched on and records the drive. If it can't (no
 adapter chosen, Bluetooth off or not allowed for PHEV Link), it shows a notification, its status screen has an "Allow
 Bluetooth" button, and your own phone's car phone card says so too.

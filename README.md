@@ -97,7 +97,9 @@ The main goal: **a connection that just works.**
 - **Find my car** — flash the headlights.
 - **Alerts** — charging complete (or charged to your limit), charging stopped early (power cut, loose cable; not when
   you unplug or switch the car on), cabin ready, climate stopped by the car, car left unlocked, door left open, lights
-  left on.
+  left on, and "out of touch" when the car phone or the bridge at home hasn't answered for half an hour (told at the
+  next background look, so within about an hour; with the car phone's battery level when it was last heard; only looks
+  that could have reached it count, and it goes away when the car phone answers again).
 - **Background watch** — while the car charges or preconditions, the app checks in every few minutes and alerts you.
 - **Charge now** — override the charge timer (experimental).
 - **Car clock** kept in sync (the car's own timers depend on it), like the official app does.
@@ -337,7 +339,7 @@ What the car brings into Home Assistant (names in the app's language):
 | Switches | climate (mode and time from the shared one-tap choice, or the weather when smart), headlights, parking lights |
 | Selects | climate mode, climate time (shared with the phones' one-tap climate) |
 | Buttons | charge now, charge on timer, flash lights, refresh |
-| Event | "Car event": charge_started, charge_finished, charge_stopped, plugged, unplugged, climate_on/off/cancelled, alarm, locked, unlocked, door_open, doors_closed, car_home, car_away, departure_started/failed, left_unlocked, door_left_open, lights_left_on, command_failed, car_health, … |
+| Event | "Car event": charge_started, charge_finished, charge_stopped, plugged, unplugged, climate_on/off/cancelled, alarm, locked, unlocked, door_open, doors_closed, car_home, car_away, departure_started/failed, left_unlocked, door_left_open, lights_left_on, command_failed, car_health, bridge_offline, … |
 
 Commands from Home Assistant run like a phone's and appear in the activity log as "Home Assistant". Retained command
 messages are never acted on (they would replay on every reconnect). Google Home and Alexa reach the car through Home

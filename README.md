@@ -61,7 +61,9 @@ The main goal: **a connection that just works.**
   With a **charge limit** (PHEV Link Plus, 60–90 %) the car stops at the limit, and with "Fill up to full just before
   departures" it waits there — for days if the car stays plugged in — and fills to 100 % just before the next
   scheduled departure (the latest window, done half an hour early, whatever the price). Switch that off to always stop
-  at the limit.
+  at the limit. A charge that ends at the limit says "charged to your limit", not "charging stopped". A battery already
+  at the car's own full point (where its charges end by themselves, often 94 % on an older battery) isn't planned to
+  100 %.
 - **Smart home** — with the bridge, the car shows up in Home Assistant by itself (MQTT discovery): battery, charging,
   climate switch, lights, charge buttons, and events for automations (charging finished, alarm, car home or away).
   Google Home and Alexa through Home Assistant. Set up from the app; the bridge can run the MQTT broker itself.
@@ -93,8 +95,9 @@ The main goal: **a connection that just works.**
 - **One-tap everywhere** — home-screen widget in three sizes (battery, electric range, charging, climate, next departure, lock; preheat, flash-lights and refresh buttons; old data dimmed), quick-settings tile
   ("Preheat"), and long-press app shortcuts (preheat, stop, flash lights, refresh).
 - **Find my car** — flash the headlights.
-- **Alerts** — charging complete, charging stopped early (power cut, loose cable), cabin ready, climate stopped by the car,
-  car left unlocked, door left open, lights left on.
+- **Alerts** — charging complete (or charged to your limit), charging stopped early (power cut, loose cable; not when
+  you unplug or switch the car on), cabin ready, climate stopped by the car, car left unlocked, door left open, lights
+  left on.
 - **Background watch** — while the car charges or preconditions, the app checks in every few minutes and alerts you.
 - **Charge now** — override the charge timer (experimental).
 - **Car clock** kept in sync (the car's own timers depend on it), like the official app does.

@@ -23,7 +23,9 @@ The main goal: **a connection that just works.**
 - **Dashboard** — battery % with estimated electric range, charging state and "full at" time, plug, doors/boot/bonnet,
   lock state, lights, power switch, car clock.
 - **Electric range** — today's range on a full battery, corrected for the outside temperature (the car's own over
-  OBD, else the forecast for home: about a fifth less at 0 °C). It can also learn from your own driving (Settings →
+  OBD, else the forecast for home: about a fifth less at 0 °C). Full is the car's 94 % (it reports its battery in steps
+  of about 6 %, and a full charge ends at 94 %), empty its 6 %, where it keeps the battery up with the engine; the range
+  left is counted between the two. It can also learn from your own driving (Settings →
   Charging → Electric range): this phone's GPS measures each drive — started by the car's Bluetooth or by hand — or
   the OBD adapter reads the odometer, and each drive is paired with the battery level the car reported before and
   after it. Recent drives count most; the drives are listed and can be forgotten. With petrol: once an OBD drive has

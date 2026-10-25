@@ -58,6 +58,10 @@ The main goal: **a connection that just works.**
   off). Your timer is read only from what the car sent this run and saved before anything is written; if a phone
   changes the timer meanwhile, that change stays. Windows follow the car's own clock. Tomorrow's prices (out around
   13:00) or an earlier departure can move the window. Every decision is in the bridge log.
+  With a **charge limit** (PHEV Link Plus, 60–90 %) the car stops at the limit, and with "Fill up to full just before
+  departures" it waits there — for days if the car stays plugged in — and fills to 100 % just before the next
+  scheduled departure (the latest window, done half an hour early, whatever the price). Switch that off to always stop
+  at the limit.
 - **Smart home** — with the bridge, the car shows up in Home Assistant by itself (MQTT discovery): battery, charging,
   climate switch, lights, charge buttons, and events for automations (charging finished, alarm, car home or away).
   Google Home and Alexa through Home Assistant. Set up from the app; the bridge can run the MQTT broker itself.

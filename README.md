@@ -267,8 +267,10 @@ by default, reminds you to plug in when the car is home, low and not plugged in 
 Settings → Alerts). With the app closed, the phone reads the bridge's saved status once an hour — every few minutes
 while the car charges or preheats, and just after the reminder time — which never wakes the car and takes about a
 second on home Wi-Fi. It shows the bridge's new alerts (each once) and keeps the widget fresh. While the app is open
-they arrive at once over the live stream. "Alerts from the bridge" can be turned off per phone (then the phone checks
-for alerts itself while connected, as before).
+they arrive at once over the live stream. Each phone chooses per kind whether it wants it while the car is **at home**
+and while it is **away** (Settings → Notifications), e.g. "left unlocked" at work but not every night in the drive: the
+bridge at home sees the car only at home, and the car hub tells from the home Wi-Fi. When it isn't known where the
+car is, a tick in either column is enough. Reminders, the weekly summary, car health and "out of touch" have one switch.
 
 **When the car isn't within reach** the app says so plainly at the top of the Car page — "Car not within reach · not
 seen since 14:32" (the bridge hasn't seen the car's Wi-Fi: it may be away, or just out of the bridge's reach), "Car not

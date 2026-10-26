@@ -63,7 +63,9 @@ The main goal: **a connection that just works.**
   (speed, hard acceleration, low battery, cold/heater, Charge or Save button), worked out from the readings, with a tip
   for keeping the engine off. On Sunday evening every phone gets the week's summary (with a car hub: the drives it
   recorded, the km driven and the km with the engine off). Settings →
-  Charging, or Home → More → Charging and trips.
+  Charging, or Home → More → Charging and trips. With the demo car (Settings → Demo mode) History shows a sample month
+  instead — commutes, an errand, a weekend trip that uses the battery up, a charge most nights in the cheap hours and
+  tonight's smart-charging plan — made on the phone each time and never saved.
 - **Smart charging** (opt-in, 2014–2017 cars, spot price) — when the car is plugged in at home, the bridge works out
   how long it needs to get full (from its own earlier charges) and moves tonight's charging to the cheapest hours
   before you need the car (the next departure, or a time you pick, with half an hour to spare). It uses the car's own

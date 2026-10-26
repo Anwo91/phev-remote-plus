@@ -1,6 +1,6 @@
 # PHEV Link — privacy policy
 
-*Last updated: 26 October 2026 (the last weather forecast is kept on the phone, so the range and smart climate still have a temperature after a restart without internet)*
+*Last updated: 26 October 2026 (the car hub's learned electric range is kept with the shared data and copied to your bridge at home)*
 
 PHEV Link is an app for the Mitsubishi Outlander PHEV (2014–2017), with an optional "bridge" (a small computer such as a
 Raspberry Pi) that you run at home. It is made by Anwo91, a sole proprietorship in Norway ("we").
@@ -16,6 +16,7 @@ for the reasons given. The Google Play version also shows ads from Google until 
 | Your car's status and the commands you send (battery, charging, climate, locks, VIN) | To show and control the car | Your phone, the car's own Wi-Fi, and your bridge on your home network. Never to us. |
 | Precise location, also in the background (optional, off by default) | To measure trips (route and distance) for the electric range | Stays on your phone. Recorded only while a trip is being measured, and only after you allow it. |
 | Approximate home location (optional) | The weather forecast, used for the range estimate | The coordinates are sent to MET Norway (api.met.no) to get the forecast. The last forecast, with the place it is for (rounded to about 10 m), is kept on your phone. |
+| The electric range the car hub learned (car hub mode only) | Home Assistant's range and the weekly summary on your bridge | The car hub's range per full battery (now and at 20 °C, the temperature, how many drives it is from) is kept with the shared data on the car hub and copied to your bridge at home. Never to us. |
 | Where the car is, rounded to about 1 km (car hub mode only) | The weather forecast where the car is, for smart climate (departures) and the range estimate | The car hub's last known location, rounded to about 1 km, is passed to your own paired phones over the car hub's bridge, and sent to MET Norway (api.met.no) for the forecast. Never to us. Without it, the saved location is used. |
 | The area around a trip's route | To draw the route map | Map pictures are fetched from OpenStreetMap's tile servers (tile.openstreetmap.org), which see which map area is shown and your IP address. |
 | Nearby Wi-Fi networks (car hub mode only, optional) | On a spare phone left in the car: to tell when the car is at home (your home Wi-Fi in sight), so charges are kept and smart charging runs only there | Stays on that phone. Android counts seeing Wi-Fi networks as location, so it asks for location access "all the time". |

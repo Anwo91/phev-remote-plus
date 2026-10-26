@@ -32,7 +32,7 @@ The main goal: **a connection that just works.**
   used for them (its 100 % down to 33 % is a full battery), so drives where the engine ran part of the way teach it
   too. Recent drives count most; the drives are listed and can be forgotten. With petrol: once an OBD drive has
   read the tank, the home screen also shows the total range — the tank (45 L) at what this car's engine burns
-  (learned from the drives, else about 6.5 L/100 km). With a car phone, the forecast is for where the car is. The
+  (learned from the drives, else about 6.5 L/100 km). With a car hub, the forecast is for where the car is. The
   forecast is looked up every half hour, when the app is opened and when the internet is back (Android holds a
   background app off the internet); Settings → Electric range and Weather location show when it was last updated and
   why it couldn't be. Without internet the last forecast (two days ahead, kept through restarts) is used.
@@ -42,7 +42,7 @@ The main goal: **a connection that just works.**
   for a large view. Three styles (Settings → Car picture): from above, from the side, or a 3D model you turn with a
   finger (and tilt in the large view). What can be tapped shows as icons, as labels, or lights up when touched.
 - **Climate** — heat, cool or defrost for 10/20/30 minutes; **Smart** mode picks mode and duration from the outside
-  temperature (MET Norway forecast for where the car is — the car phone's location, else the saved place), with a run time you can make shorter or longer (Settings → Smart climate run time). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
+  temperature (MET Norway forecast for where the car is — the car hub's location, else the saved place), with a run time you can make shorter or longer (Settings → Smart climate run time). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
 - **Activity** — who did what with the car (each phone by the name you give it, also when used right next to the
   car) and what the car did: plugged in/out, charging started/stopped and why, every 10 %, a summary per charge
   (from → to %, time, ≈ kWh), climate, locks, doors, lights, power switch, alarm; plus the bridge's departures and its
@@ -78,28 +78,28 @@ The main goal: **a connection that just works.**
   Google Home and Alexa through Home Assistant. Set up from the app; the bridge can run the MQTT broker itself.
   Or straight into **Google Home** (also Apple Home, Alexa) without Home Assistant: the bridge speaks Matter — scan
   the code in the app.
-- **Car phone** (PHEV Link Plus) — a spare Android phone left in the car holds the car's Wi-Fi all the time and runs the
-  bridge itself; your own phone reaches it over Tailscale from anywhere. Tailscale is built in on the car phone (the
+- **Car hub** (PHEV Link Plus) — a spare Android phone left in the car holds the car's Wi-Fi all the time and runs the
+  bridge itself; your own phone reaches it over Tailscale from anywhere. Tailscale is built in on the car hub (the
   Tailscale app's VPN would keep the app off the car's Wi-Fi), signed in once with a link. A bridge at home (for Google
-  Home and Home Assistant) is taken over by itself: it goes through the car phone instead of joining the car's Wi-Fi.
-  The OBD adapter connected to the car phone can be used from your own phone; the car phone connects to it by itself
+  Home and Home Assistant) is taken over by itself: it goes through the car hub instead of joining the car's Wi-Fi.
+  The OBD adapter connected to the car hub can be used from your own phone; the car hub connects to it by itself
   when the car is switched on and records the drive, whoever drives. The car's own ignition report (over its Wi-Fi)
   decides; only while that isn't known do other signs count (it starts charging from the car's USB, moves, or the
-  car's Wi-Fi goes), so plugging the car in to charge doesn't set it trying. The car phone also feels the car move
+  car's Wi-Fi goes), so plugging the car in to charge doesn't set it trying. The car hub also feels the car move
   (its accelerometer: someone getting in, a door shutting, the car driving off) and then looks at the car at once instead
   of at its next look every 10 minutes; a look that finds nothing new (wind, a lorry going by) makes it less sensitive for a
   while. After a door, the lock or switching off it stays in touch with the car for 10 minutes, so the car being switched
-  on is seen at once and the drive is recorded from the start. Your phone shows whether the car phone is on the car's Wi-Fi
-  (and since when not), can make it try again, and fetches its log to share. Departures are started once, by the car phone. The car phone
+  on is seen at once and the drive is recorded from the start. Your phone shows whether the car hub is on the car's Wi-Fi
+  (and since when not), can make it try again, and fetches its log to share. Departures are started once, by the car hub. The car hub
   updates itself (or
   when your phone asks). Setting it up: on the spare phone choose "This phone stays in the car" at the start; then, on
-  your own phone on the same Wi-Fi, Settings → Car phone → Add a car phone sends it the car's Wi-Fi and the rest. The
-  car phone only shows its status; everything else (stay connected, updates, release) is on your own phone. Your own
-  phone reaches the car phone from anywhere through Tailscale built into PHEV Link as well (sign in once on the car phone
+  your own phone on the same Wi-Fi, Settings → Car hub → Add a car hub sends it the car's Wi-Fi and the rest. The
+  car hub only shows its status; everything else (stay connected, updates, release) is on your own phone. Your own
+  phone reaches the car hub from anywhere through Tailscale built into PHEV Link as well (sign in once on the car hub
   card; no VPN, no Tailscale app needed) — or through the Tailscale app, if you prefer. **Another person's phone**:
-  Settings → Car phone → Add another phone — share the car phone with their own Tailscale account in Tailscale (they
-  see nothing else of yours), then they scan the code on the first screen ("Join a car phone"); it works at home and
-  away, they see the trips the car phone records, and departures and settings are shared with yours.
+  Settings → Car hub → Add another phone — share the car hub with their own Tailscale account in Tailscale (they
+  see nothing else of yours), then they scan the code on the first screen ("Join a car hub"); it works at home and
+  away, they see the trips the car hub records, and departures and settings are shared with yours.
 - **Charge timer** — set the car's own charge timer (2014–2017 cars): up to three time windows, each on the days you
   pick, plus "full charge" days; the car keeps it and waits for the window when plugged in. "Charge now" skips it once.
 - **Departure timers** — "ready to leave at 07:30 on weekdays": 35 min before, the app checks the forecast and starts
@@ -110,16 +110,16 @@ The main goal: **a connection that just works.**
 - **Find my car** — flash the headlights.
 - **Alerts** — charging complete (or charged to your limit), charging stopped early (power cut, loose cable; not when
   you unplug or switch the car on), cabin ready, climate stopped by the car, car left unlocked, door left open, lights
-  left on, and "out of touch" when the car phone or the bridge at home hasn't answered for half an hour (told at the
-  next background look, so within about an hour; with the car phone's battery level when it was last heard; only looks
-  that could have reached it count, and it goes away when the car phone answers again).
+  left on, and "out of touch" when the car hub or the bridge at home hasn't answered for half an hour (told at the
+  next background look, so within about an hour; with the car hub's battery level when it was last heard; only looks
+  that could have reached it count, and it goes away when the car hub answers again).
 - **Background watch** — while the car charges or preconditions, the app checks in every few minutes and alerts you.
 - **Charge now** — override the charge timer (experimental).
 - **Car clock** kept in sync (the car's own timers depend on it), like the official app does.
 - **Diagnostics** (Settings → Diagnostics) — live log of every connection step and packet (with raw hex), raw register
   table, raw register writes for experiments, previous-session log, one-tap share.
   Every OBD reading goes into the log (what changed each second, all of them once a minute). Tools → Automatic log
-  upload (developer, off by default, GitHub build only — not in the Google Play build): with a GitHub token, this phone's, the Pi's and the car phone's logs go gzipped
+  upload (developer, off by default, GitHub build only — not in the Google Play build): with a GitHub token, this phone's, the Pi's and the car hub's logs go gzipped
   to a private GitHub repository (`logs/<device>/<day>/`) every 30–60 min and after each trip and charge; 30 days kept.
 - **Vehicle settings** — the car's own customisable functions over Wi-Fi, like in the official app: lights (auto-cutout,
   headlights on exit, lights on remote unlock), locks (auto relock, unlock mode, auto unlock), lock/unlock beeps and horn
@@ -133,10 +133,10 @@ The main goal: **a connection that just works.**
     battery power meter (charging ↔ using; its decoding was measured on a real car and is still checked against the
     battery's stored charge while driving), the drive battery, temperatures (coolant, intake, outside, cabin,
     warmest/coldest battery module), fuel, 12 V, engine load, throttle, motor speeds and odometer. Live while an adapter
-    answers (this phone's, or the car phone's lent one); otherwise the last values seen on this phone, greyed. The
+    answers (this phone's, or the car hub's lent one); otherwise the last values seen on this phone, greyed. The
     screen stays on while it is open. While it is open, speed and battery power are asked for every round (engine
     speed too while the engine runs), engine and motor speeds take turns about every 2 s, and the rest less often;
-    through the car phone each new round is sent the moment it is read. Engine load and throttle read 0 while the
+    through the car hub each new round is sent the moment it is read. Engine load and throttle read 0 while the
     engine is stopped, the fuel gauge shows the median of the last minute (the fuel sloshes), and stored energy uses
     the pack voltage at rest so it doesn't dip while accelerating. The power meter is marked "not checked yet" until a drive confirms it;
     the battery % is the battery controller's (it counts its reserve), with the car's own % beside it; the outside
@@ -146,9 +146,9 @@ The main goal: **a connection that just works.**
   - **fault codes** from all control units with a plain-language explanation of 3,500 codes (what it means, how serious,
     can I drive, likely causes, what to check first; 122 written by hand for this car), code lookup, and clearing of
     engine/emission codes behind a confirmation;
-  - **car health over time** (with a car phone, or a phone with its own adapter): every time the car is switched on
+  - **car health over time** (with a car hub, or a phone with its own adapter): every time the car is switched on
     it notes the 12 V, the drive battery's health, capacity and cells, and once a day reads the fault codes of every
-    unit; parked, the car phone reads the 12 V battery at rest every 12 hours with the adapter alone (the car stays
+    unit; parked, the car hub reads the 12 V battery at rest every 12 hours with the adapter alone (the car stays
     asleep). The OBD tab shows the 12 V at rest with its last readings, the battery health month by month, a cell that
     keeps coming out lowest, and each fault code's history (first seen, gone, came back). A low 12 V battery or a new
     or returning fault code is a notification on every phone;
@@ -348,7 +348,7 @@ What the car brings into Home Assistant (names in the app's language):
 | Kind | Entities |
 |---|---|
 | Sensors | battery %, electric range (from the shared full range), time to full, full at, charge timer, climate ends, last update, energy charged (kWh, for the Energy dashboard) |
-| Diagnostic sensors | 12 V battery (now and at rest, and its state), drive battery health and capacity, cell spread, fault codes (the codes as an attribute), health checked (filled in by the car phone's OBD adapter) |
+| Diagnostic sensors | 12 V battery (now and at rest, and its state), drive battery health and capacity, cell spread, fault codes (the codes as an attribute), health checked (filled in by the car hub's OBD adapter) |
 | Binary sensors | charging, charging cable, lock, doors (each door as an attribute), theft alarm, switched on, at home, bridge link |
 | Switches | climate (mode and time from the shared one-tap choice, or the weather when smart), headlights, parking lights |
 | Selects | climate mode, climate time (shared with the phones' one-tap climate) |
@@ -416,27 +416,27 @@ Known good: OBDLink LX / MX+ / CX, Vgate iCar 2 / iCar Pro, Konnwei KW902, Veepe
 the phone's Bluetooth settings first; Bluetooth LE adapters are found with a scan in the app. The OBD socket is under the
 steering wheel. Unplug the adapter when the car stands for days (it draws from the 12 V battery).
 
-With a car phone (above), choose the adapter once on the car phone's status screen, or from your own phone ("Choose its
-adapter" on the car phone card: the Bluetooth devices paired on the car phone, the adapters your phone has used, or
-what "Search near the car phone" finds). Nothing has to be done at the car phone: it pairs with a new adapter by itself,
-entering the PIN given on your phone (or 1234, 0000 and 6789 in turn). A car phone without an adapter takes the one
+With a car hub (above), choose the adapter once on the car hub's status screen, or from your own phone ("Choose its
+adapter" on the car hub card: the Bluetooth devices paired on the car hub, the adapters your phone has used, or
+what "Search near the car hub" finds). Nothing has to be done at the car hub: it pairs with a new adapter by itself,
+entering the PIN given on your phone (or 1234, 0000 and 6789 in turn). A car hub without an adapter takes the one
 your phone used by itself. Adapters asking for a pairing confirmation instead of a PIN still need one tap on the car
 phone (Android allows no app to answer that). Your own phone then uses "The adapter in
-the car" (through the car phone) by itself. While the car phone is connected to the car (the car on), the OBD tab and the dashboard show the
-car phone's own connection live, and "Scan codes" and "Clear codes" run on the car phone, so it keeps recording the
-drive. When it isn't connected (the car off), Connect borrows the adapter through the car phone — readings, fault codes,
-clearing and tests, a little slower than an adapter of its own. One phone at a time; the car phone's own OBD session
+the car" (through the car hub) by itself. While the car hub is connected to the car (the car on), the OBD tab and the dashboard show the
+car hub's own connection live, and "Scan codes" and "Clear codes" run on the car hub, so it keeps recording the
+drive. When it isn't connected (the car off), Connect borrows the adapter through the car hub — readings, fault codes,
+clearing and tests, a little slower than an adapter of its own. One phone at a time; the car hub's own OBD session
 steps aside while it is lent, and takes the adapter back when the car is switched on (borrowed before that) to record
 the drive. "Borrow the adapter" borrows it while the car is on, for live tests and the terminal: your phone sends its
-readings back to the car phone, which keeps recording the drive as one trip (a live test pauses the speed readings, so
+readings back to the car hub, which keeps recording the drive as one trip (a live test pauses the speed readings, so
 run it parked). The shared view stops after 5 minutes with the app in the background.
-The car phone connects to the adapter by itself when the car is switched on and records the drive. If it can't (no
+The car hub connects to the adapter by itself when the car is switched on and records the drive. If it can't (no
 adapter chosen, Bluetooth off or not allowed for PHEV Link), it shows a notification, its status screen has an "Allow
-Bluetooth" button, and your own phone's car phone card says so too.
-Your own phone's car phone card also lists every permission and setting the car phone depends on (Bluetooth, nearby
+Bluetooth" button, and your own phone's car hub card says so too.
+Your own phone's car hub card also lists every permission and setting the car hub depends on (Bluetooth, nearby
 Wi-Fi, location, notifications, battery, background use and data, alarms, installing updates, the motion sensor), each
-OK or with what to do on the car phone.
-The card also shows the car phone's own OBD connection: connected (recording a drive since when), or when the car last
+OK or with what to do on the car hub.
+The card also shows the car hub's own OBD connection: connected (recording a drive since when), or when the car last
 answered and how the last automatic try went.
 
 The OBD side never writes to the car except "Clear codes" (OBD-II mode 04), which asks first. The terminal asks before

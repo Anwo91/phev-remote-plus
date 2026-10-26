@@ -1,6 +1,6 @@
 # PHEV Link — privacy policy
 
-*Last updated: 25 October 2026 (the car phone tells your phones its own battery level, for the "out of touch" alert)*
+*Last updated: 26 October 2026 (the last weather forecast is kept on the phone, so the range and smart climate still have a temperature after a restart without internet)*
 
 PHEV Link is an app for the Mitsubishi Outlander PHEV (2014–2017), with an optional "bridge" (a small computer such as a
 Raspberry Pi) that you run at home. It is made by Anwo91, a sole proprietorship in Norway ("we").
@@ -15,7 +15,7 @@ for the reasons given. The Google Play version also shows ads from Google until 
 | --- | --- | --- |
 | Your car's status and the commands you send (battery, charging, climate, locks, VIN) | To show and control the car | Your phone, the car's own Wi-Fi, and your bridge on your home network. Never to us. |
 | Precise location, also in the background (optional, off by default) | To measure trips (route and distance) for the electric range | Stays on your phone. Recorded only while a trip is being measured, and only after you allow it. |
-| Approximate home location (optional) | The weather forecast, used for the range estimate | The coordinates are sent to MET Norway (api.met.no) to get the forecast. |
+| Approximate home location (optional) | The weather forecast, used for the range estimate | The coordinates are sent to MET Norway (api.met.no) to get the forecast. The last forecast, with the place it is for (rounded to about 10 m), is kept on your phone. |
 | Where the car is, rounded to about 1 km (car phone mode only) | The weather forecast where the car is, for smart climate (departures) and the range estimate | The car phone's last known location, rounded to about 1 km, is passed to your own paired phones over the car phone's bridge, and sent to MET Norway (api.met.no) for the forecast. Never to us. Without it, the saved location is used. |
 | The area around a trip's route | To draw the route map | Map pictures are fetched from OpenStreetMap's tile servers (tile.openstreetmap.org), which see which map area is shown and your IP address. |
 | Nearby Wi-Fi networks (car phone mode only, optional) | On a spare phone left in the car: to tell when the car is at home (your home Wi-Fi in sight), so charges are kept and smart charging runs only there | Stays on that phone. Android counts seeing Wi-Fi networks as location, so it asks for location access "all the time". |

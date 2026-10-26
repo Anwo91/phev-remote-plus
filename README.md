@@ -26,9 +26,11 @@ The main goal: **a connection that just works.**
   OBD, else the forecast for home: about a fifth less at 0 °C). Full is the car's 94 % (it reports its battery in steps
   of about 6 %, and a full charge ends at 94 %), empty its 6 %, where it keeps the battery up with the engine; the range
   left is counted between the two. It can also learn from your own driving (Settings →
-  Charging → Electric range): this phone's GPS measures each drive — started by the car's Bluetooth or by hand — or
-  the OBD adapter reads the odometer, and each drive is paired with the battery level the car reported before and
-  after it. Recent drives count most; the drives are listed and can be forgotten. With petrol: once an OBD drive has
+  Charging → Electric range): this phone's GPS measures each drive — started by the car's Bluetooth or by hand — and
+  pairs it with the battery level the car reported before and after it; or the OBD adapter (on this phone or the car
+  phone) records each drive, and only the km driven with the engine off count, against the battery controller's level
+  used for them (its 100 % down to 33 % is a full battery), so drives where the engine ran part of the way teach it
+  too. Recent drives count most; the drives are listed and can be forgotten. With petrol: once an OBD drive has
   read the tank, the home screen also shows the total range — the tank (45 L) at what this car's engine burns
   (learned from the drives, else about 6.5 L/100 km). With a car phone, the forecast is for where the car is. The
   forecast is looked up every half hour, when the app is opened and when the internet is back (Android holds a

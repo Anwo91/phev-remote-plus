@@ -30,7 +30,10 @@ The main goal: **a connection that just works.**
   the OBD adapter reads the odometer, and each drive is paired with the battery level the car reported before and
   after it. Recent drives count most; the drives are listed and can be forgotten. With petrol: once an OBD drive has
   read the tank, the home screen also shows the total range — the tank (45 L) at what this car's engine burns
-  (learned from the drives, else about 6.5 L/100 km). With a car phone, the forecast is for where the car is.
+  (learned from the drives, else about 6.5 L/100 km). With a car phone, the forecast is for where the car is. The
+  forecast is looked up every half hour, when the app is opened and when the internet is back (Android holds a
+  background app off the internet); Settings → Electric range and Weather location show when it was last updated and
+  why it couldn't be. Without internet the last forecast (two days ahead, kept through restarts) is used.
 - **Car picture** — the car on the home screen shows its state at a glance: open doors, boot and bonnet, lights and
   hazards, the cabin glowing warm or cool while climate runs, the lock, and the charging cable (animated while
   charging). Tap a part to see what it means and act on it — switch the lights off, start climate, charge now; hold it

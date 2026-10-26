@@ -80,8 +80,12 @@ The main goal: **a connection that just works.**
   (PHEV Link Plus: to the limit — 80 %, or the one in Settings — right away, waiting there, full just before the next
   departure; one charge to full when that departure is too close to wait). "Right away" is a timer window from the
   10-minute step under way, so the car charges as soon as it has it; should it still wait for its timer two minutes
-  later, the bridge sends "Charge now" and gives the timer back at the window's end. It is for that plug-in only: the bridge
-  clears it when the car is unplugged.
+  later, the bridge sends "Charge now" and gives the timer back at the window's end. It shows as one line ("This charge:
+  Full now") with *Change* for the three choices. A choice is for that plug-in only (the bridge clears it when the car
+  is unplugged, and every plug-in starts at *Full now*) unless **Remember for every plug-in** is ticked: *Cheapest* then
+  switches smart charging on in Settings, *80 % now* does too and keeps "right away" on every plug-in. Under *80 % now*
+  the Home screen shows the departure it fills up for, with **Set departure** (a one-time departure; it opens by itself
+  when there is none in the next 8 days).
 - **Smart home** — with the bridge, the car shows up in Home Assistant by itself (MQTT discovery): battery, charging,
   climate switch, lights, charge buttons, and events for automations (charging finished, alarm, car home or away).
   Google Home and Alexa through Home Assistant. Set up from the app; the bridge can run the MQTT broker itself.
@@ -114,6 +118,8 @@ The main goal: **a connection that just works.**
 - **Departure timers** — "ready to leave at 07:30 on weekdays": 35 min before, the app checks the forecast and starts
   defrost/heat/cool just long enough, so the car is ready when you walk out. Mild morning? It skips and tells you.
   With a bridge, departures are shared by all your phones and the bridge starts them itself while the car is home.
+  A departure is every week on the days you pick, or **once** on a day in the week ahead; a one-time departure comes
+  out of the list half a day after it (the bridge and every phone take it out).
 - **One-tap everywhere** — home-screen widget in three sizes (battery, electric range, charging, climate, next departure, lock; preheat, flash-lights and refresh buttons; old data dimmed), quick-settings tile
   ("Preheat"), and long-press app shortcuts (preheat, stop, flash lights, refresh).
 - **Find my car** — flash the headlights.

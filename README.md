@@ -276,7 +276,14 @@ by default, reminds you to plug in when the car is home, low and not plugged in 
 Settings → Alerts). With the app closed, the phone reads the bridge's saved status once an hour — every few minutes
 while the car charges or preheats, and just after the reminder time — which never wakes the car and takes about a
 second on home Wi-Fi. It shows the bridge's new alerts (each once) and keeps the widget fresh. While the app is open
-they arrive at once over the live stream. Each phone chooses per kind whether it wants it while the car is **at home**
+they arrive at once over the live stream. **Instant alerts** (Settings → Notifications, on by default) keep that within
+seconds with the app closed too, without Google's push service or any server in between: the phone keeps a light
+live stream from the car hub (or bridge) open in a small background service with a quiet notification — through the
+built-in Tailscale for a car hub, from anywhere. The car hub sends only new alerts and the car's main changes (locked,
+doors, plug, charging, climate, alarm, battery in steps of ten) and a sign of life every 5 minutes; the phone connects
+again by itself after a network change or a restart of the car hub, and looks every 15 minutes even in deep sleep.
+Android may pause it to save battery, so Settings offers to let PHEV Link run without battery optimisation. For the
+fastest alerts, also turn on "Stay connected to the car" on the car hub. Each phone chooses per kind whether it wants it while the car is **at home**
 and while it is **away** (Settings → Notifications), e.g. "left unlocked" at work but not every night in the drive: the
 bridge at home sees the car only at home, and the car hub tells from the home Wi-Fi. When it isn't known where the
 car is, a tick in either column is enough. Reminders, the weekly summary, car health and "out of touch" have one switch.

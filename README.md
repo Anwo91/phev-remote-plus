@@ -55,7 +55,9 @@ The main goal: **a connection that just works.**
   (hvakosterstrommen.no for Norway, elprisetjustnu.se for Sweden, with VAT and the Norwegian electricity support),
   Norgespris or a fixed price, plus your grid fee — with monthly totals. Trips: from leaving the bridge's reach until
   back, with the battery used (≈ electric km). Drives recorded with the OBD adapter split the battery into used,
-  won back by regeneration and charged by the engine, next to the petrol burnt. Each engine start gets its likely reason
+  won back by regeneration and charged by the engine, next to the petrol burnt and the tank at the start and the end
+  (% and litres; the gauge sways with the fuel while driving, so every reading is lined up with the fuel burnt after it
+  and the median taken; the list shows the tank at the end). Each engine start gets its likely reason
   (speed, hard acceleration, low battery, cold/heater, Charge or Save button), worked out from the readings, with a tip
   for keeping the engine off. On Sunday evening every phone gets the week's summary. Settings →
   Charging, or Home → More → Charging and trips.

@@ -73,6 +73,11 @@ The main goal: **a connection that just works.**
   at the limit. A charge that ends at the limit says "charged to your limit", not "charging stopped". A battery already
   at the car's own full point (where its charges end by themselves, often 94 % on an older battery) isn't planned to
   100 %.
+  **This charge** on the Home screen (while plugged in, with a bridge): *Full now* (no smart charging this time; when the
+  car waits for its own timer, the bridge sends "Charge now"), *Cheapest* (smart charging as set) or *80 % now*
+  (PHEV Link Plus: to the limit — 80 %, or the one in Settings — right away, waiting there, full just before the next
+  departure; one charge to full when that departure is too close to wait). It is for that plug-in only: the bridge
+  clears it when the car is unplugged.
 - **Smart home** — with the bridge, the car shows up in Home Assistant by itself (MQTT discovery): battery, charging,
   climate switch, lights, charge buttons, and events for automations (charging finished, alarm, car home or away).
   Google Home and Alexa through Home Assistant. Set up from the app; the bridge can run the MQTT broker itself.

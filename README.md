@@ -25,7 +25,8 @@ The main goal: **a connection that just works.**
 - **Electric range** — today's range on a full battery, corrected for the outside temperature (the car's own over
   OBD, else the forecast for home: about a fifth less at 0 °C). Full is the car's 94 % (it reports its battery in steps
   of about 6 %, and a full charge ends at 94 %), empty its 6 %, where it keeps the battery up with the engine; the range
-  left is counted between the two. It can also learn from your own driving (Settings →
+  left is counted between the two by the battery controller's level at each of the car's steps (measured on a real car:
+  the steps aren't evenly spread, and its 76 % is about 73 % of a full battery). It can also learn from your own driving (Settings →
   Charging → Electric range): this phone's GPS measures each drive — started by the car's Bluetooth or by hand — and
   pairs it with the battery level the car reported before and after it; or the OBD adapter (on this phone or the car
   phone) records each drive, and only the km driven with the engine off count, against the battery controller's level

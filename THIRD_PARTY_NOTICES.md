@@ -49,9 +49,9 @@ Thanks to the OBDb contributors, whose work first showed where these values live
   (https://www.elprisetjustnu.se, Sweden), fetched by the bridge; both are free for any use and ask to be named where
   the prices are shown, which the app does under the price chart.
 
-### Built-in Tailscale (car phone mode, 64-bit phones)
+### Built-in Tailscale (car hub mode, 64-bit phones)
 
-The car phone joins the owner's tailnet with Tailscale's `tsnet` library, built from `tailnet/` with gomobile into
+The car hub joins the owner's tailnet with Tailscale's `tsnet` library, built from `tailnet/` with gomobile into
 `libgojni.so` (the Tailscale app's VPN would keep the app off the car's Wi-Fi). No logs are sent to Tailscale.
 
 - Tailscale, https://github.com/tailscale/tailscale — © Tailscale Inc & contributors — BSD 3-Clause License

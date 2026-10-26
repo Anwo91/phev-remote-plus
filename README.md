@@ -157,10 +157,15 @@ The main goal: **a connection that just works.**
     engine/emission codes behind a confirmation;
   - **car health over time** (with a car hub, or a phone with its own adapter): every time the car is switched on
     it notes the 12 V, the drive battery's health, capacity and cells, and once a day reads the fault codes of every
-    unit; parked, the car hub reads the 12 V battery at rest every 12 hours with the adapter alone (the car stays
-    asleep). The OBD tab shows the 12 V at rest with its last readings, the battery health month by month, a cell that
-    keeps coming out lowest, and each fault code's history (first seen, gone, came back). A low 12 V battery or a new
-    or returning fault code is a notification on every phone;
+    unit; parked, the car hub reads the 12 V battery at rest with the adapter alone (the car stays asleep), first 2
+    hours after the car was switched off (when it counts as at rest), then every 3 hours. The parked time counts from
+    the latest sign the car was on (its OBD session, the car's own report over its Wi-Fi, another phone using the lent
+    adapter), and a reading while the 12 V battery is being charged (13 V or more) isn't counted as at rest. The OBD
+    tab shows the 12 V at rest with when it was measured and after how long parked, whether the car has been used
+    since and when the next reading comes, a graph of the last readings (tap or drag to see each one), the 12 V with
+    the car on (the DC/DC converter charging it; live in the OBD screen while connected), the battery health month by
+    month, a cell that keeps coming out lowest, and each fault code's history (first seen, gone, came back). A low
+    12 V battery or a new or returning fault code is a notification on every phone;
   - **guided live tests** you can do on the spot: full fault scan, 12 V battery, 12 V charging in READY (DC/DC), drive
     battery capacity, cell balance, EU-kontroll readiness, charging check, engine warm-up/thermostat, fuel trims,
     front/rear tyre match and a full car scan (listens to the car, maps every control unit with its part numbers and all its data, reads the standard OBD extras and finds where the car reports its buttons; continues where it left off if it stops) — each with step-by-step instructions and a pass/warning/fail verdict with explanation

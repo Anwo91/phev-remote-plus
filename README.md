@@ -61,7 +61,8 @@ The main goal: **a connection that just works.**
   and the median taken; the list shows the tank at the end). The last 7 days and the month show the averages: L/100 km
   over all the km, and kWh/100 km on electricity over the km driven with the engine off (each drive's too). Each engine start gets its likely reason
   (speed, hard acceleration, low battery, cold/heater, Charge or Save button), worked out from the readings, with a tip
-  for keeping the engine off. On Sunday evening every phone gets the week's summary. Settings →
+  for keeping the engine off. On Sunday evening every phone gets the week's summary (with a car hub: the drives it
+  recorded, the km driven and the km with the engine off). Settings →
   Charging, or Home → More → Charging and trips.
 - **Smart charging** (opt-in, 2014–2017 cars, spot price) — when the car is plugged in at home, the bridge works out
   how long it needs to get full (from its own earlier charges) and moves tonight's charging to the cheapest hours
@@ -378,7 +379,7 @@ What the car brings into Home Assistant (names in the app's language):
 
 | Kind | Entities |
 |---|---|
-| Sensors | battery %, electric range (from the shared full range), time to full, full at, charge timer, climate ends, last update, energy charged (kWh, for the Energy dashboard) |
+| Sensors | battery %, electric range (from the range the car hub learned from its drives, else the shared full range), time to full, full at, charge timer, climate ends, last update, energy charged (kWh, for the Energy dashboard) |
 | Diagnostic sensors | 12 V battery (now and at rest, and its state), drive battery health and capacity, cell spread, fault codes (the codes as an attribute), health checked (filled in by the car hub's OBD adapter) |
 | Binary sensors | charging, charging cable, lock, doors (each door as an attribute), theft alarm, switched on, at home, bridge link |
 | Switches | climate (mode and time from the shared one-tap choice, or the weather when smart), headlights, parking lights |

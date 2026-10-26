@@ -85,7 +85,11 @@ The main goal: **a connection that just works.**
   The OBD adapter connected to the car phone can be used from your own phone; the car phone connects to it by itself
   when the car is switched on and records the drive, whoever drives. The car's own ignition report (over its Wi-Fi)
   decides; only while that isn't known do other signs count (it starts charging from the car's USB, moves, or the
-  car's Wi-Fi goes), so plugging the car in to charge doesn't set it trying. Your phone shows whether the car phone is on the car's Wi-Fi
+  car's Wi-Fi goes), so plugging the car in to charge doesn't set it trying. The car phone also feels the car move
+  (its accelerometer: someone getting in, a door shutting, the car driving off) and then looks at the car at once instead
+  of at its next look every 10 minutes; a look that finds nothing new (wind, a lorry going by) makes it less sensitive for a
+  while. After a door, the lock or switching off it stays in touch with the car for 10 minutes, so the car being switched
+  on is seen at once and the drive is recorded from the start. Your phone shows whether the car phone is on the car's Wi-Fi
   (and since when not), can make it try again, and fetches its log to share. Departures are started once, by the car phone. The car phone
   updates itself (or
   when your phone asks). Setting it up: on the spare phone choose "This phone stays in the car" at the start; then, on
@@ -308,8 +312,9 @@ Try it before going near the car: set `emulator=true` in `/etc/phev-bridge.prope
 Push alerts without the phone being near the car: create a private topic on [ntfy](https://ntfy.sh), install the ntfy app,
 and set `ntfy.url=https://ntfy.sh/<your-topic>` in the bridge config.
 
-**Modes:** `interval` (default) connects every 10 minutes for a status check and on demand for commands;
-`persistent` stays connected all the time. Interval is gentler on the car's 12 V battery — a parked car whose Wi-Fi
+**Modes:** `interval` (default) connects every 10 minutes for a status check and on demand for commands, and stays
+connected for 10 minutes after a door opens or shuts, the car is locked or unlocked, or switched off (someone is at the
+car); `persistent` stays connected all the time. Interval is gentler on the car's 12 V battery — a parked car whose Wi-Fi
 module never rests may drain it over long periods.
 
 **Security:** never expose port 8099 to the internet directly — use Tailscale/WireGuard. Anyone with the token can

@@ -46,8 +46,8 @@ The main goal: **a connection that just works.**
 - **Activity** — who did what with the car (each phone by the name you give it, also when used right next to the
   car) and what the car did: plugged in/out, charging started/stopped and why, every 10 %, a summary per charge
   (from → to %, time, ≈ kWh), climate, locks, doors, lights, power switch, alarm; plus the bridge's departures and its
-  own events. Kept on the bridge for every phone (and on its web page); filters for charging, climate, doors & lights,
-  people and the bridge. Tap any row for its details: the date and time to the second (each time, for a repeated row),
+  own events. Kept on the bridge for every phone (and on its web page), and shown as the History tab's third tab, in
+  one row with Trips and Charging; filters for charging, climate, doors & lights, people and the bridge. Tap any row for its details: the date and time to the second (each time, for a repeated row),
   which shared settings changed, whether the bridge was updated or restarted, a trip's times and battery used, how long
   the car or its Wi-Fi was out of touch, and the entry as logged.
 - **Charging and trips** — the bridge keeps every charge at home with its energy from the wall (from the battery levels;

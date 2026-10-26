@@ -76,7 +76,9 @@ The main goal: **a connection that just works.**
   **This charge** on the Home screen (while plugged in, with a bridge): *Full now* (no smart charging this time; when the
   car waits for its own timer, the bridge sends "Charge now"), *Cheapest* (smart charging as set) or *80 % now*
   (PHEV Link Plus: to the limit — 80 %, or the one in Settings — right away, waiting there, full just before the next
-  departure; one charge to full when that departure is too close to wait). It is for that plug-in only: the bridge
+  departure; one charge to full when that departure is too close to wait). "Right away" is a timer window from the
+  10-minute step under way, so the car charges as soon as it has it; should it still wait for its timer two minutes
+  later, the bridge sends "Charge now" and gives the timer back at the window's end. It is for that plug-in only: the bridge
   clears it when the car is unplugged.
 - **Smart home** — with the bridge, the car shows up in Home Assistant by itself (MQTT discovery): battery, charging,
   climate switch, lights, charge buttons, and events for automations (charging finished, alarm, car home or away).

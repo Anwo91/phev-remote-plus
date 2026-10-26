@@ -42,7 +42,7 @@ Electricity prices (shown with smart charging)
   Elpriset just nu.se (https://www.elprisetjustnu.se) for Sweden, fetched by the bridge.
 
 
-== Built-in Tailscale (car phone mode, 64-bit phones) ==
+== Built-in Tailscale (car hub mode, 64-bit phones) ==
 
 Tailscale (tsnet), https://github.com/tailscale/tailscale
   Copyright (c) 2020 Tailscale Inc & contributors. Licensed under the BSD 3-Clause License (text below).

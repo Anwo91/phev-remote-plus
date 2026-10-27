@@ -204,7 +204,10 @@ The main goal: **a connection that just works.**
     since and when the next reading comes, a graph of the last readings (tap or drag to see each one), the 12 V with
     the car on (the DC/DC converter charging it; live in the OBD screen while connected), the battery health month by
     month, a cell that keeps coming out lowest, and each fault code's history (first seen, gone, came back). A low
-    12 V battery or a new or returning fault code is a notification on every phone;
+    12 V battery or a new or returning fault code is a notification on every phone. **Battery trends** (Plus) draw
+    the drive battery's health, capacity and cell difference and the 12 V at rest month by month (tap or drag for a
+    month; the 12 V with the month's lowest), and the electric range on a full battery by outside temperature in 5 °C
+    steps, from your own trips with the engine off;
   - **guided live tests** you can do on the spot: full fault scan, 12 V battery, 12 V charging in READY (DC/DC), drive
     battery capacity, cell balance, EU-kontroll readiness, charging check, engine warm-up/thermostat, fuel trims,
     front/rear tyre match and a full car scan (listens to the car, maps every control unit with its part numbers and all its data, reads the standard OBD extras and finds where the car reports its buttons; continues where it left off if it stops) — each with step-by-step instructions and a pass/warning/fail verdict with explanation

@@ -117,7 +117,10 @@ The main goal: **a connection that just works.**
   of at its next look every 10 minutes; a look that finds nothing new (wind, a lorry going by) makes it less sensitive for a
   while. After a door, the lock or switching off it stays in touch with the car for 10 minutes, so the car being switched
   on is seen at once and the drive is recorded from the start. Your phone shows whether the car hub is on the car's Wi-Fi
-  (and since when not), can make it try again, and fetches its log to share. Departures are started once, by the car hub. The car hub
+  (and since when not), can make it try again, and fetches its log to share. Departures are started once, by the car hub. When
+  the car hub sits on power at 100%, it reminds you to turn on its battery protection (Samsung: Settings →
+  Battery → Battery protection → Maximum, 80%), on its own screen and on your phone's car
+  hub card ("Ask on car hub" opens its battery settings there). The car hub
   updates itself (or
   when your phone asks). Setting it up: on the spare phone choose "This phone stays in the car" at the start; then, on
   your own phone on the same Wi-Fi, Settings → Car hub → Add a car hub sends it the car's Wi-Fi and the rest. The

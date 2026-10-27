@@ -153,6 +153,11 @@ The main goal: **a connection that just works.**
   Every OBD reading goes into the log (what changed each second, all of them once a minute). Tools → Automatic log
   upload (developer, off by default, GitHub build only — not in the Google Play build): with a GitHub token, this phone's, the Pi's and the car hub's logs go gzipped
   to a private GitHub repository (`logs/<device>/<day>/`) every 30–60 min and after each trip and charge; 30 days kept.
+- **Developer tab** (Settings → Developer, GitHub build only, temporary, English) — the tests that confirm what the
+  app knows about the car from our own findings: checks of the logs and the car's reports, a recorder for the official
+  app's connection to the car (Android VPN for the car's address only; the car hub steps off the car's Wi-Fi for it),
+  a register watch, the car's Wi-Fi and open ports, and the read-only OBD scans (full car scan with every unit's fault
+  codes, signal cross-check, charging pass). Each marks a facts list that can be shared as a report.
 - **Vehicle settings** — the car's own customisable functions over Wi-Fi, like in the official app: lights (auto-cutout,
   headlights on exit, lights on remote unlock), locks (auto relock, unlock mode, auto unlock), lock/unlock beeps and horn
   answerback, wipers, turn signals, power windows and A/C behaviour; each change is confirmed by the car and saved.

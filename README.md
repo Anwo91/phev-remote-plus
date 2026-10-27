@@ -22,6 +22,9 @@ The main goal: **a connection that just works.**
 
 - **Dashboard** — battery % with estimated electric range, charging state and "full at" time, plug, doors/boot/bonnet,
   lock state, lights, power switch, car clock.
+- **Pull down to refresh** — on the Car tab, pull down for the car's data now: straight from the car, or the car hub
+  (or bridge at home) connects to the car at once instead of waiting for its next look; when the car can't be reached
+  it tries again first. On History, a pull brings the car hub's new trips and the latest charges and activity.
 - **Electric range** — today's range on a full battery, corrected for the outside temperature (the car's own over
   OBD, else the forecast for home: about a fifth less at 0 °C). Full is the car's 94 % (it reports its battery in steps
   of about 6 %, and a full charge ends at 94 %), empty its 6 %, where it keeps the battery up with the engine; the range

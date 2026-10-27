@@ -217,7 +217,7 @@ The main goal: **a connection that just works.**
 2. Open it and allow installing from your browser/files app when Android asks.
 3. Updates: install a newer APK over the old one; settings are kept.
 
-**Updates:** Settings → Updates shows the app's and the bridge's version and updates both from inside the app (the app downloads the newest release from GitHub, checks it is signed with the same key, and opens Android's installer — the first time, Android asks to allow installs from PHEV Link).
+**Updates:** Settings → Updates shows the app's and the bridge's version and updates both from inside the app (the app downloads the newest release from GitHub, checks it is signed with the same key, and opens Android's installer — the first time, Android asks to allow installs from PHEV Link). With **Install updates automatically** (on unless turned off), every time the app opens it checks GitHub and installs a new version right away without a tap: the app closes for a moment and a notification offers to open it again. It waits while a car command, the OBD adapter or a trip is in progress, skips roaming and Data Saver, and asks the car hub to update too.
 
 ## First setup
 

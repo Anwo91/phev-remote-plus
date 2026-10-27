@@ -139,6 +139,9 @@ The main goal: **a connection that just works.**
   out of the list half a day after it (the bridge and every phone take it out).
 - **One-tap everywhere** — home-screen widget in three sizes (battery, electric range, charging, climate, next departure, lock; preheat, flash-lights and refresh buttons; old data dimmed), quick-settings tile
   ("Preheat"), and long-press app shortcuts (preheat, stop, flash lights, refresh).
+- **Swipe between tabs** — swipe left or right to move between Car, Plan, History, Health and Settings. On History and
+  Health the swipe goes through their own tabs on top first (Trips, Charging, Activity; Overview to Tools), then on to
+  the next tab. Things you drag sideways (the 12 V graph, the 3D car) still turn and slide as before.
 - **Find my car** — flash the headlights.
 - **Alerts** — charging complete (or charged to your limit), charging stopped early (power cut, loose cable; not when
   you unplug or switch the car on), cabin ready, climate stopped by the car, car left unlocked, door left open, lights

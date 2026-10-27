@@ -144,7 +144,10 @@ The main goal: **a connection that just works.**
   defrost/heat/cool just long enough, so the car is ready when you walk out. Mild morning? It skips and tells you.
   With a bridge, departures are shared by all your phones and the bridge starts them itself while the car is home.
   A departure is every week on the days you pick, or **once** on a day in the week ahead; a one-time departure comes
-  out of the list half a day after it (the bridge and every phone take it out).
+  out of the list half a day after it (the bridge and every phone take it out). **From your calendar** (Plus): a
+  departure before each event in the calendars you pick (optionally only events with a word such as "car" in the
+  title), 5–60 minutes before, up to 8 days ahead; moved or cancelled events move or remove it. The calendar is read
+  on your phone only; the departure carries just the time, never the event's name.
 - **One-tap everywhere** — home-screen widget in three sizes (battery, electric range, charging, climate, next departure, lock; preheat, flash-lights and refresh buttons; old data dimmed), quick-settings tile
   ("Preheat"), and long-press app shortcuts (preheat, stop, flash lights, refresh).
 - **Swipe between tabs** — swipe left or right to move between Car, Plan, History, Health and Settings. On History and

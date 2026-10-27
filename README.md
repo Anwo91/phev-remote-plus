@@ -323,6 +323,14 @@ rather than as an error, with the last known values marked "As of 14:32". Comman
 reason instead of spinning, and a departure that can't start for that reason gets one quiet notification instead of a
 "failed, try again".
 
+**Every screen names the devices the same way.** With a car hub, Settings says "Through the car hub" and "Car hub only",
+and a Pi kept next to it is "Bridge at home" everywhere (Settings → Updates, its row and page, the update card on Home).
+When one doesn't answer, the app says why from what it knows: a home-network address only works on the home Wi-Fi, and
+for a Tailscale address it shows Tailscale's own "offline" (a Pi without power or network) instead of telling you to
+join your home Wi-Fi. While connected, the connection sheet offers only Diagnostics; "Why can't it connect?" and
+"Try again now" appear when it isn't. When the car hub doesn't answer, "Why can't it connect?" opens its own question in
+Help & FAQ.
+
 Every step is logged in the app (Settings → Diagnostics) and in the bridge log (`journalctl -u phev-bridge -f`). The bridge also keeps
 its log in `/var/log/phev-bridge/bridge.log` (at most 4 MB, the previous file as `bridge.log.1`), and every start says
 how the last run ended — normally, the computer restarted (power cut), or the program was stopped abruptly (with the

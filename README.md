@@ -60,7 +60,10 @@ The main goal: **a connection that just works.**
   won back by regeneration and charged by the engine, next to the petrol burnt and the tank at the start and the end
   (% and litres; the gauge sways with the fuel while driving, so every reading is lined up with the fuel burnt after it
   and the median taken; the list shows the tank at the end). The last 7 days and the month show the averages: L/100 km
-  over all the km, and kWh/100 km on electricity over the km driven with the engine off (each drive's too). Each engine start gets its likely reason
+  over all the km, and kWh/100 km on electricity over the km driven with the engine off (each drive's too). What a drive
+  cost uses one electricity price with charging: with a bridge, what charging at home cost this month (else the last
+  7 days, else the price plan's fixed price or Norgespris); a price typed under Trips only without a bridge, or until
+  home charging has a cost. Each engine start gets its likely reason
   (speed, hard acceleration, low battery, cold/heater, Charge or Save button), worked out from the readings, with a tip
   for keeping the engine off. On Sunday evening every phone gets the week's summary (with a car hub: the drives it
   recorded, the km driven and the km with the engine off). Settings →

@@ -159,6 +159,11 @@ The main goal: **a connection that just works.**
   left on, and "out of touch" when the car hub or the bridge at home hasn't answered for half an hour (told at the
   next background look, so within about an hour; with the car hub's battery level when it was last heard; only looks
   that could have reached it count, and it goes away when the car hub answers again).
+- **Places** (PHEV Link Plus, Settings → Places, with a car hub) — save places such as work or the cabin: where the car
+  parked, where your phone is, or one of the spots where the car often stops (from your trips), each with a size. The
+  car hub tells you when the car arrives or leaves (a notification, switched per place) and it shows in Activity; it
+  goes by its own location (the GPS of its trips, no extra battery). A place added where the car already stands
+  tells nothing.
 - **Background watch** — while the car charges or preconditions, the app checks in every few minutes and alerts you.
 - **Charge now** — override the charge timer (experimental).
 - **Car clock** kept in sync (the car's own timers depend on it), like the official app does.

@@ -207,6 +207,9 @@ The main goal: **a connection that just works.**
   isn't within reach). Plus 26 well-known problems of the 2014–2017 Outlander PHEV (12 V battery, EV system warnings, capacity loss,
   brake disc rust, charging, …) with why they happen and what to do, and a guide to all 24 beeps and sounds: which ones
   this app, the car's menu, a switch or only a dealer can change. With sources.
+- **Backup and restore** (Settings → Backup and restore) — Android's own backup keeps your settings in your Google
+  account and a new phone gets them back at its first start; or save them to a file and restore that. Passwords, keys
+  and pairing are never in a backup: on a new phone you connect to the car again.
 - **Languages** — English, Norsk (bokmål), Svenska, Dansk and Deutsch (Settings → Language).
 - **Bridge (optional)** — a small always-on computer near the car (e.g. Raspberry Pi) keeps the link and lets the phone
   reach the car **from anywhere** through a VPN such as Tailscale. Includes a web control page and push alerts via ntfy.

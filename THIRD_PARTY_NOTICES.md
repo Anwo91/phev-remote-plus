@@ -79,6 +79,15 @@ built with esbuild from the packages below. It ships in the Raspberry Pi bundle,
 - noble-curves 1.9.7 and noble-hashes 1.8.0, © Paul Miller — MIT
 - qrcode-generator 1.4.4, © 2009 Kazuhiko Arase — MIT (draws the pairing QR code)
 
+## Only for testing (not in the app or the bridge)
+
+Used by the tests in CI; none of it ships.
+
+- JUnit 4 — Eclipse Public License 1.0
+- Robolectric 4.16.1 (runs the app's tests on a PC), https://robolectric.org — MIT
+- AndroidX Test and Compose UI Test (`androidx.test:core`, `androidx.compose.ui:ui-test-junit4`) — Apache License 2.0
+- kotlinx-coroutines-test — Apache License 2.0
+
 ## Written for this project
 
 Everything else is PHEV Link's own work, © 2026 Anwo91, all rights reserved. That includes the car protocol

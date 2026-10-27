@@ -68,7 +68,12 @@ The main goal: **a connection that just works.**
   over all the km, and kWh/100 km on electricity over the km driven with the engine off (each drive's too). What a drive
   cost uses one electricity price with charging: with a bridge, what charging at home cost this month (else the last
   7 days, else the price plan's fixed price or Norgespris); a price typed under Trips only without a bridge, or until
-  home charging has a cost. Each engine start gets its likely reason
+  home charging has a cost. Fill-ups are found by themselves (the tank 10 % or more higher at the start of a trip than
+  at the end of the one before): the app asks for the litres from the pump (a notification and a "Filled up?" card in
+  Trips; a fill-up can also be typed in or edited there, and its price per litre becomes the trips' fuel price). After
+  two full tanks (filled until the pump clicks off, with every trip in between recorded) the trips' fuel and the
+  petrol range are corrected by the pump litres against what the app counted, shown under Trips → Fill-ups with each
+  tank. Shared between your phones through the bridge. Each engine start gets its likely reason
   (speed, hard acceleration, low battery, cold/heater, Charge or Save button), worked out from the readings, with a tip
   for keeping the engine off. On Sunday evening every phone gets the week's summary (with a car hub: the drives it
   recorded, the km driven and the km with the engine off). Settings →

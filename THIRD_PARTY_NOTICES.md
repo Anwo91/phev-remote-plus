@@ -33,6 +33,16 @@ Thanks to the OBDb contributors, whose work first showed where these values live
 - ZXing core 3.5.3, https://github.com/zxing/zxing — Copyright ZXing authors — Apache License 2.0
 - ZXing Android Embedded 4.3.0, https://github.com/journeyapps/zxing-android-embedded — Copyright JourneyApps — Apache License 2.0
 
+### Firebase Cloud Messaging (instant alerts by push)
+
+- Firebase Android SDK: Cloud Messaging 25.0.2 and what it brings (Installations, Common, Components, Data Transport),
+  https://github.com/firebase/firebase-android-sdk — © Google LLC — Apache License 2.0
+- Google Play services client libraries it needs (`com.google.android.gms:play-services-base`, `-basement`, `-tasks`,
+  `-cloud-messaging`, `-stats`) — © Google LLC — Android Software Development Kit License
+  (https://developer.android.com/studio/terms)
+- The alerts go through Firebase Cloud Messaging (Google) and PHEV Link's own push relay (`relay/`, on Cloudflare
+  Workers), encrypted so neither can read them. No Firebase Analytics.
+
 ### Weather
 
 - Forecast data from MET Norway (Locationforecast, https://api.met.no/), CC BY 4.0 and NLOD 2.0.
@@ -87,6 +97,8 @@ Used by the tests in CI; none of it ships.
 - Robolectric 4.16.1 (runs the app's tests on a PC), https://robolectric.org — MIT
 - AndroidX Test and Compose UI Test (`androidx.test:core`, `androidx.compose.ui:ui-test-junit4`) — Apache License 2.0
 - kotlinx-coroutines-test — Apache License 2.0
+- Wrangler 4.143.1 (Cloudflare's tool; deploys the push relay from CI), https://github.com/cloudflare/workers-sdk — MIT or
+  Apache License 2.0
 
 ## Written for this project
 

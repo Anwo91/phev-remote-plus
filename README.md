@@ -170,7 +170,9 @@ The main goal: **a connection that just works.**
   parked, where your phone is, or one of the spots where the car often stops (from your trips), each with a size. The
   car hub tells you when the car arrives or leaves (a notification, switched per place) and it shows in Activity; it
   goes by its own location (the GPS of its trips, no extra battery). A place added where the car already stands
-  tells nothing.
+  tells nothing. With **Smart charging here too**, smart charging works at that place as at home (the cheapest
+  hours, your ready-by time and limit), with the spot prices of its own price area (guessed from where it is, or
+  picked); those charges show in History with the place's name.
 - **Background watch** — while the car charges or preconditions, the app checks in every few minutes and alerts you.
 - **Charge now** — override the charge timer (experimental).
 - **Car clock** kept in sync (the car's own timers depend on it), like the official app does.

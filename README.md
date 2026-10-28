@@ -38,7 +38,10 @@ The main goal: **a connection that just works.**
   pairs it with the battery level the car reported before and after it; or the OBD adapter (on this phone or the car
   phone) records each drive, and only the km driven with the engine off count, against the battery controller's level
   used for them (its 100 % down to 33 % is a full battery), so drives where the engine ran part of the way teach it
-  too. Recent drives count most; the drives are listed and can be forgotten. With petrol: once an OBD drive has
+  too. Recent drives count most; the drives are listed and can be forgotten. Everything the app learns from your own
+  trips, charges and fill-ups (the range, the fuel correction, petrol use, charging speed, where the car stops charging,
+  the power meter) is listed under Settings → Learned values, with a reset for each that reaches every phone, the car
+  hub and the bridge; History keeps every trip, charge and fill-up. With petrol: once an OBD drive has
   read the tank, the home screen also shows the total range — the tank (45 L) at what this car's engine burns
   (learned from the drives, else about 6.5 L/100 km; the petrol the engine spent charging the battery is left out, as
   that charge is driven on electricity and counts in the electric range). With a car hub, the forecast is for where the

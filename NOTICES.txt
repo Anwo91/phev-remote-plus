@@ -28,6 +28,15 @@ ZXing core 3.5.3 (https://github.com/zxing/zxing) and ZXing Android Embedded 4.3
   Copyright ZXing authors; Copyright JourneyApps.
   Licensed under the Apache License, Version 2.0 (text below).
 
+Firebase Cloud Messaging 25.0.2 and what it brings (Firebase Installations, Common, Components, Data Transport),
+https://github.com/firebase/firebase-android-sdk: instant alerts by push
+  Copyright Google LLC.
+  Licensed under the Apache License, Version 2.0 (text below).
+
+Google Play services client libraries (play-services-base, -basement, -tasks, -cloud-messaging, -stats), needed by
+Firebase Cloud Messaging
+  Copyright Google LLC. Android Software Development Kit License, https://developer.android.com/studio/terms
+
 Weather forecast
   Data from MET Norway (the Norwegian Meteorological Institute), Locationforecast,
   https://api.met.no/, licensed under Creative Commons Attribution 4.0 (CC BY 4.0) and the

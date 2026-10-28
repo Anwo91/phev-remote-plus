@@ -16,7 +16,7 @@ The main goal: **a connection that just works.**
 | Packets split over Wi-Fi | Dropped | Reassembled; garbage skipped and logged |
 | Key out of sync | Silently counts errors | Re-synchronises from the car's hint, resends, asks for a new key if needed |
 | Phone already on the car Wi-Fi | — | Detected and used directly |
-| When things go wrong | — | Every step logged; share the log from Diagnostics |
+| When things go wrong | — | Every step logged; share the log from Diagnostics; crash reports (Firebase Crashlytics, the last log lines cleaned of places, names and addresses; off in Settings → About) |
 
 ## Features
 

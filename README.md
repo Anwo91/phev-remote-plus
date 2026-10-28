@@ -339,13 +339,15 @@ Settings → Alerts). With the app closed, the phone reads the bridge's saved st
 while the car charges or preheats, and just after the reminder time — which never wakes the car and takes about a
 second on home Wi-Fi. It shows the bridge's new alerts (each once) and keeps the widget fresh. While the app is open
 they arrive at once over the live stream. **Instant alerts** (Settings → Notifications, on by default) keep that within
-seconds with the app closed too, without Google's push service or any server in between: the phone keeps a light
-live stream from the car hub (or bridge) open in a small background service with a quiet notification — through the
-built-in Tailscale for a car hub, from anywhere. The car hub sends only new alerts and the car's main changes (locked,
-doors, plug, charging, climate, alarm, battery in steps of ten) and a sign of life every 5 minutes; the phone connects
-again by itself after a network change or a restart of the car hub, and looks every 15 minutes even in deep sleep.
-Android may pause it to save battery, so Settings offers to let PHEV Link run without battery optimisation. For the
-fastest alerts, also turn on "Stay connected to the car" on the car hub. Each phone chooses per kind whether it wants it while the car is **at home**
+seconds with the app closed too, with nothing kept running on the phone and no lasting notification: the car hub (or
+bridge) sends each alert the moment it raises it, as a push through Google's Firebase Cloud Messaging and PHEV Link's
+own small push relay (a Cloudflare Worker that holds Firebase's sending key). The alert is encrypted on the car hub
+with a key only your paired phones have, so neither the relay, Cloudflare nor Google can read it; it carries the alerts
+of the last half hour and the car's main state (battery, plug, lock, doors, lights, climate) for the alert's words.
+The phone shows each alert once, by the same at-home/away choices, and the background look stays as the backup.
+"Send a test alert" there tries the whole way and says how long it took. Some phones (Xiaomi and others) hold pushes
+back while the app is closed, so Settings offers to let PHEV Link run without battery optimisation and says when to
+allow Autostart. For the fastest alerts, also turn on "Stay connected to the car" on the car hub. Each phone chooses per kind whether it wants it while the car is **at home**
 and while it is **away** (Settings → Notifications), e.g. "left unlocked" at work but not every night in the drive: the
 bridge at home sees the car only at home, and the car hub tells from the home Wi-Fi. When it isn't known where the
 car is, a tick in either column is enough. Reminders, the weekly summary, car health and "out of touch" have one switch.

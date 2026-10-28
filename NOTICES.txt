@@ -33,6 +33,11 @@ https://github.com/firebase/firebase-android-sdk: instant alerts by push
   Copyright Google LLC.
   Licensed under the Apache License, Version 2.0 (text below).
 
+Firebase Crashlytics 20.0.6 and what it brings (Firebase Sessions and further Firebase and Data Transport parts),
+https://github.com/firebase/firebase-android-sdk: crash reports
+  Copyright Google LLC.
+  Licensed under the Apache License, Version 2.0 (text below).
+
 Google Play services client libraries (play-services-base, -basement, -tasks, -cloud-messaging, -stats), needed by
 Firebase Cloud Messaging
   Copyright Google LLC. Android Software Development Kit License, https://developer.android.com/studio/terms

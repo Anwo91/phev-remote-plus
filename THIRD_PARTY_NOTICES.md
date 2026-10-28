@@ -43,6 +43,13 @@ Thanks to the OBDb contributors, whose work first showed where these values live
 - The alerts go through Firebase Cloud Messaging (Google) and PHEV Link's own push relay (`relay/`, on Cloudflare
   Workers), encrypted so neither can read them. No Firebase Analytics.
 
+### Firebase Crashlytics (crash reports)
+
+- Firebase Android SDK: Crashlytics 20.0.6 and what it brings (Firebase Sessions and further Firebase and Data
+  Transport parts), https://github.com/firebase/firebase-android-sdk — © Google LLC — Apache License 2.0
+- Reports go to the developer's Firebase project, with the app's last log lines cleaned on the phone first
+  (`core/.../diag/LogCleaner.kt`); off in Settings → About. No Firebase Analytics.
+
 ### Weather
 
 - Forecast data from MET Norway (Locationforecast, https://api.met.no/), CC BY 4.0 and NLOD 2.0.

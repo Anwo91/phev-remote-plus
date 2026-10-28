@@ -22,6 +22,10 @@ The main goal: **a connection that just works.**
 
 - **Dashboard** — battery % with estimated electric range, charging state and "full at" time, plug, doors/boot/bonnet,
   lock state, lights, power switch, car clock.
+- **Where the car is** — on the Car tab: a small map with the car, the saved place it is at (or "On the move"), when
+  it was found and how precise, and "Open in maps" to walk or drive there. With a car hub it is the hub's own location
+  (a fresh fix when the one it knows is more than 2 minutes old), asked only by your own paired phones; without one,
+  where the last trip with a route ended.
 - **Pull down to refresh** — on the Car tab, pull down for the car's data now: straight from the car, or the car hub
   (or bridge at home) connects to the car at once instead of waiting for its next look; when the car can't be reached
   it tries again first. On History, a pull brings the car hub's new trips and the latest charges and activity.

@@ -165,7 +165,10 @@ The main goal: **a connection that just works.**
   you unplug or switch the car on), cabin ready, climate stopped by the car, car left unlocked, door left open, lights
   left on, and "out of touch" when the car hub or the bridge at home hasn't answered for half an hour (told at the
   next background look, so within about an hour; with the car hub's battery level when it was last heard; only looks
-  that could have reached it count, and it goes away when the car hub answers again).
+  that could have reached it count, and it goes away when the car hub answers again). **Plug-in reminder**: when the
+  car is switched off at home and still isn't plugged in 10 minutes later (5–30, your choice), every phone is
+  reminded ("Parked at home since 13:25 with 18% battery, not plugged in"), and again in the evening (21:00 by
+  default) if it still isn't; both only below the battery level you choose (80% by default).
 - **Places** (PHEV Link Plus, Settings → Places, with a car hub) — save places such as work or the cabin: where the car
   parked, where your phone is, or one of the spots where the car often stops (from your trips), each with a size. The
   car hub tells you when the car arrives or leaves (a notification, switched per place) and it shows in Activity; it
@@ -338,9 +341,9 @@ GitHub, checks its SHA-256 and reinstalls itself (bridges installed before 1.0.3
 more; after that, updates happen in the app).
 
 **Alerts from the bridge, and the phone's background look:** the bridge watches the car around the clock (charge
-complete or stopped, left unlocked, door or lights left on, security alarm, scheduled charge didn't start) and, at 21:00
-by default, reminds you to plug in when the car is home, low and not plugged in (time and level shared by all phones,
-Settings → Alerts). With the app closed, the phone reads the bridge's saved status once an hour — every few minutes
+complete or stopped, left unlocked, door or lights left on, security alarm, scheduled charge didn't start) and reminds
+you to plug in when the car is home, low and not plugged in: 10 minutes after it was switched off at home, and at 21:00
+(the minutes, the time and the level are shared by all phones, Settings → Notifications → Plug-in reminder). With the app closed, the phone reads the bridge's saved status once an hour — every few minutes
 while the car charges or preheats, and just after the reminder time — which never wakes the car and takes about a
 second on home Wi-Fi. It shows the bridge's new alerts (each once) and keeps the widget fresh. While the app is open
 they arrive at once over the live stream. **Instant alerts** (Settings → Notifications, on by default) keep that within

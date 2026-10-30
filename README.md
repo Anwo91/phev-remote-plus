@@ -44,17 +44,18 @@ The main goal: **a connection that just works.**
   hub and the bridge; History keeps every trip, charge and fill-up. With petrol: once an OBD drive has
   read the tank, the home screen also shows the total range — the tank (45 L) at what this car's engine burns
   (learned from the drives, else about 6.5 L/100 km; the petrol the engine spent charging the battery is left out, as
-  that charge is driven on electricity and counts in the electric range). With a car hub, the forecast is for where the
-  car is. The forecast is looked up every half hour, when the app is opened and when the internet is back (Android
-  holds a background app off the internet); Settings → Electric range and Weather location show when it was last
-  updated and why it couldn't be. Without internet the last forecast (two days ahead, kept through restarts) is used.
+  that charge is driven on electricity and counts in the electric range). The forecast is always for where the car is: the car
+  hub's location, or without one where a phone was while connected to the car's own Wi-Fi (rounded to about 1 km; no
+  setting to type a place in). The forecast is looked up every half hour, when the app is opened and when the internet
+  is back (Android holds a background app off the internet); Settings → Electric range shows when it was last updated
+  and why it couldn't be. Without internet the last forecast (two days ahead, kept through restarts) is used.
 - **Car picture** — the car on the home screen shows its state at a glance: open doors, boot and bonnet, lights and
   hazards, the cabin glowing warm or cool while climate runs, the lock, and the charging cable (animated while
   charging). Tap a part to see what it means and act on it — switch the lights off, start climate, charge now; hold it
-  for a large view. Three styles (Settings → Car picture): from above, from the side, or a 3D model you turn with a
+  for a large view. Three styles (Settings → Appearance): from above, from the side, or a 3D model you turn with a
   finger (and tilt in the large view). What can be tapped shows as icons, as labels, or lights up when touched.
 - **Climate** — heat, cool or defrost for 10/20/30 minutes; **Smart** mode picks mode and duration from the outside
-  temperature (MET Norway forecast for where the car is — the car hub's location, else the saved place), with a run time you can make shorter or longer (Settings → Smart climate run time). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
+  temperature (MET Norway forecast for where the car is — the car hub's location, else where a phone was on the car's Wi-Fi), with a run time you can make shorter or longer (Settings → Smart climate run time; the one-tap climate's time follows it too: 10, 20 or 30 min when the weather doesn't pick it). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
 - **Activity** — who did what with the car (each phone by the name you give it, also when used right next to the
   car) and what the car did: plugged in/out, charging started/stopped and why, every 10 %, a summary per charge
   (from → to %, time, ≈ kWh), climate, locks, doors, lights, power switch, alarm, and the car's clock when it is moved
@@ -448,8 +449,8 @@ What the car brings into Home Assistant (names in the app's language):
 | Sensors | battery %, electric range (from the range the car hub learned from its drives, else the shared full range), time to full, full at, charge timer, climate ends, last update, energy charged (kWh, for the Energy dashboard) |
 | Diagnostic sensors | 12 V battery (now and at rest, and its state), drive battery health and capacity, cell spread, fault codes (the codes as an attribute), health checked (filled in by the car hub's OBD adapter) |
 | Binary sensors | charging, charging cable, lock, doors (each door as an attribute), theft alarm, switched on, at home, bridge link |
-| Switches | climate (mode and time from the shared one-tap choice, or the weather when smart), headlights, parking lights |
-| Selects | climate mode, climate time (shared with the phones' one-tap climate) |
+| Switches | climate (mode from the shared one-tap choice, time from the smart climate run time, or the weather when smart), headlights, parking lights |
+| Selects | climate mode, climate time (10, 20 or 30 min = the smart climate run time shorter, normal or longer, shared with the phones) |
 | Buttons | charge now, charge on timer, flash lights, refresh |
 | Event | "Car event": charge_started, charge_finished, charge_stopped, plugged, unplugged, climate_on/off/cancelled, alarm, locked, unlocked, door_open, doors_closed, car_home, car_away, departure_started/failed, left_unlocked, door_left_open, lights_left_on, command_failed, car_health, bridge_offline, … |
 

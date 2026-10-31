@@ -132,7 +132,8 @@ The main goal: **a connection that just works.**
   (its accelerometer: someone getting in, a door shutting, the car driving off) and then looks at the car at once instead
   of at its next look every 10 minutes; a look that finds nothing new (wind, a lorry going by) makes it less sensitive for a
   while. After a door, the lock or switching off it stays in touch with the car for 10 minutes, so the car being switched
-  on is seen at once and the drive is recorded from the start. Your phone shows whether the car hub is on the car's Wi-Fi
+  on is seen at once and the drive is recorded from the start, and it stays in touch while the car is on, so switching
+  off, locking and the lights show on your phone within seconds. Your phone shows whether the car hub is on the car's Wi-Fi
   (and since when not), can make it try again, and fetches its log to share. Departures are started once, by the car hub. When
   the car hub sits on power at 100%, it reminds you to turn on its battery protection (Samsung: Settings →
   Battery → Battery protection → Maximum, 80%), on its own screen and on your phone's car
@@ -413,7 +414,8 @@ and set `ntfy.url=https://ntfy.sh/<your-topic>` in the bridge config.
 
 **Modes:** `interval` (default) connects every 10 minutes for a status check and on demand for commands, and stays
 connected for 10 minutes after a door opens or shuts, the car is locked or unlocked, or switched off (someone is at the
-car); `persistent` stays connected all the time. Interval is gentler on the car's 12 V battery — a parked car whose Wi-Fi
+car), and while the car is on (given up after 3 minutes without an answer: the car drove off); `persistent` stays
+connected all the time. Interval is gentler on the car's 12 V battery — a parked car whose Wi-Fi
 module never rests may drain it over long periods.
 
 **Security:** never expose port 8099 to the internet directly — use Tailscale/WireGuard. Anyone with the token can

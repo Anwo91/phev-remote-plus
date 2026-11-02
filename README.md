@@ -54,8 +54,11 @@ The main goal: **a connection that just works.**
   charging). Tap a part to see what it means and act on it — switch the lights off, start climate, charge now; hold it
   for a large view. Three styles (Settings → Appearance): from above, from the side, or a 3D model you turn with a
   finger (and tilt in the large view). What can be tapped shows as icons, as labels, or lights up when touched.
-- **Climate** — heat, cool or defrost for 10/20/30 minutes; **Smart** mode picks mode and duration from the outside
-  temperature (MET Norway forecast for where the car is — the car hub's location, else where a phone was on the car's Wi-Fi), with a run time you can make shorter or longer (Settings → Smart climate run time; the one-tap climate's time follows it too: 10, 20 or 30 min when the weather doesn't pick it). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
+- **Climate** — heat, cool or defrost for 10/20/30 minutes; **Smart** mode picks mode and duration from the cabin and
+  outside temperatures (cools by the cabin; heats or defrosts by the colder of the two; says so when nothing is needed). The
+  cabin comes from the car hub: the car's own sensor right after a drive, else the car hub's own temperature, corrected at
+  every drive start. Outside is the car's sensor after a drive, else the MET Norway forecast for where the car is (the car
+  hub's location, else where a phone was on the car's Wi-Fi), with a run time you can make shorter or longer (Settings → Smart climate run time; the one-tap climate's time follows it too: 10, 20 or 30 min when the weather doesn't pick it). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
 - **Activity** — who did what with the car (each phone by the name you give it, also when used right next to the
   car) and what the car did: plugged in/out, charging started/stopped and why, every 10 %, a summary per charge
   (from → to %, time, ≈ kWh), climate, locks, doors, lights, power switch, alarm, and the car's clock when it is moved

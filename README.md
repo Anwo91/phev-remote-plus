@@ -146,7 +146,9 @@ The main goal: **a connection that just works.**
   your own phone on the same Wi-Fi, Settings → Car hub → Add a car hub sends it the car's Wi-Fi and the rest. The
   car hub only shows its status; everything else (stay connected, updates, release) is on your own phone. Your own
   phone reaches the car hub from anywhere through Tailscale built into PHEV Link as well (sign in once on the car hub
-  card; no VPN, no Tailscale app needed) — or through the Tailscale app, if you prefer. **Another person's phone**:
+  card; no VPN, no Tailscale app needed) — or through the Tailscale app, if you prefer. On a Wi-Fi that blocks
+  Tailscale (some work and guest Wi-Fi), the built-in one goes over mobile data by itself, only for this ("Stay on
+  Wi-Fi" on the car hub card turns that off). **Another person's phone**:
   Settings → Car hub → Add another phone — share the car hub with their own Tailscale account in Tailscale (they
   see nothing else of yours), then they scan the code on the first screen ("Join a car hub"); it works at home and
   away, they see the trips the car hub records, and departures and settings are shared with yours.

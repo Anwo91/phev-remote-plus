@@ -16,6 +16,12 @@ Kotlin standard library and kotlinx.coroutines
   Licensed under the Apache License, Version 2.0 (text below).
 
 
+Outside car facts (OBD and CAN values, used as "unconfirmed" until our own data confirms them)
+  Positions and scaling first found by others and re-entered as facts in PHEV Link's own table; none of their
+  files or code is included. Thanks to OBDb (Mitsubishi Outlander PHEV signal set, https://github.com/OBDb,
+  CC BY-SA 4.0), the OVMS Outlander module (https://github.com/GreyPeter/Open-Vehicle-Monitoring-System-3-Outlander,
+  MIT) and owners on the myoutlanderphev.com forum.
+
 == In the app ==
 
 Android Jetpack libraries (AndroidX Core, Activity, Lifecycle, Compose UI, Material 3, Material Icons,

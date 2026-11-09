@@ -572,7 +572,9 @@ sending anything that isn't a read request.
 - Weather: [MET Norway](https://api.met.no/) Locationforecast (CC BY 4.0). Maps: © OpenStreetMap contributors.
 - Drive-battery values: owners on myoutlanderphev.com. Thanks to [OBDb](https://github.com/OBDb), whose
   Outlander signal set first showed where the engine, cluster and climate values live (the app's own table
-  replaced it after 1.0.98). Tips research sources are listed with each tip. See
+  replaced it after 1.0.98), and whose Outlander PHEV set, with the OVMS Outlander module, gives the values the app
+  shows as "unconfirmed" until our own data confirms them (facts only, nothing copied). Tips research sources are
+  listed with each tip. See
   [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 Not affiliated with or endorsed by Mitsubishi Motors. Use at your own risk.

@@ -12,6 +12,20 @@ ships inside the app (Settings → About → Licences) and in the bridge bundle 
 - Copyright JetBrains s.r.o. and Kotlin Programming Language contributors
 - License: Apache License 2.0
 
+### Outside car facts, used until our own data confirms them
+
+From 2.0 (November 2026) the app reads some car values whose position and scaling other people found first. None of
+their files, tables or code is in the app: each fact (which unit, which bytes, which scaling) was re-entered in PHEV
+Link's own table through a clean room, and each value carries its source and the status "unconfirmed" until our
+own data confirms it (record: `docs/cleanroom/outside-facts/`). Thanks to:
+
+- OBDb, Mitsubishi Outlander PHEV signal set (https://github.com/OBDb/Mitsubishi-Outlander-PHEV, © the OBDb
+  contributors, CC BY-SA 4.0): drive battery, battery module, motor, climate, tyre, hybrid unit and other values.
+- The OVMS Outlander module (https://github.com/GreyPeter/Open-Vehicle-Monitoring-System-3-Outlander, © its
+  authors, MIT): what some of the car's own CAN messages mean.
+- Owners on the myoutlanderphev.com forum, thread "Extracting useful data from your OBDII port": heater
+  temperatures and motor torque.
+
 ### Former: OBDb signal definitions (1.0.92 to 1.0.98)
 
 Versions 1.0.92 to 1.0.98 carried `obdb-outlander.tsv`, adapted from OBDb

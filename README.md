@@ -86,10 +86,12 @@ The main goal: **a connection that just works.**
   petrol range are corrected by the pump litres against what the app counted, shown under Trips → Fill-ups with each
   tank. Shared between your phones through the bridge. Each engine start gets its likely reason
   (speed, hard acceleration, low battery, cold/heater, Charge or Save button), worked out from the readings, with a tip
-  for keeping the engine off. **Month by month** (Trips) shows what the car cost: the fuel, the electricity (what
-  charging at home cost where the bridge kept it, else the battery energy the trips used), the two together and per
-  10 km, next to the month before; the earlier months come with Plus, and every month can be saved as a spreadsheet
-  (CSV, semicolons and decimal commas where Excel expects them). On Sunday evening every phone gets the week's summary (with a car hub: the drives it
+  for keeping the engine off. **Stats** (on top of History → Activity) show what the car cost and used by
+  day, week or month, each next to the one before: the cost (the fuel plus the electricity: what charging at home cost
+  where the bridge kept it, else the battery energy the trips used), the km, the electric share, per 10 km, L/100 km,
+  kWh/100 km on electricity, the litres and the kWh. With Plus, a graph of the last 7 days, 8 weeks or 12 months (km,
+  cost, L/100 km or kWh/100 km) and the earlier ones; every day, week or month can be saved as a spreadsheet (CSV,
+  semicolons and decimal commas where Excel expects them). The Activity log below them is one timeline. On Sunday evening every phone gets the week's summary (with a car hub: the drives it
   recorded, the km driven and the km with the engine off). Settings →
   Charging, or Home → More → Charging and trips. With the demo car (Settings → Demo mode) History shows a sample month
   instead — commutes, an errand, a weekend trip that uses the battery up, a charge most nights in the cheap hours and

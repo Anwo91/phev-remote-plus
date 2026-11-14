@@ -82,10 +82,10 @@ under a BSD, MIT, ISC or Apache 2.0 licence).
 
 == In the Google Play version of the app ==
 
-Google Mobile Ads SDK, Google User Messaging Platform SDK and Google Play Billing Library
+Google Play Billing Library
   Copyright Google LLC. Used under the Android Software Development Kit License and the Google APIs
-  Terms of Service, https://developers.google.com/terms. Open-source parts they include are listed
-  in their own notices.
+  Terms of Service, https://developers.google.com/terms. Open-source parts it includes are listed
+  in its own notices.
 
 
 == In the bridge (Raspberry Pi) ==

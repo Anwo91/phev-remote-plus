@@ -25,7 +25,10 @@ The main goal: **a connection that just works.**
 - **Where the car is** — on the Car tab: a small map with the car, the saved place it is at (or "On the move"), when
   it was found and how precise, and "Open in maps" to walk or drive there. With a car hub it is the hub's own location
   (a fresh fix when the one it knows is more than 2 minutes old), asked only by your own paired phones; without one,
-  where the last trip with a route ended.
+  where the last trip with a route ended. Every map moves and zooms by hand (drag, pinch, double tap, and + and − on
+  the bigger ones), and a button brings back the car, the place or the whole trip; on a drive the map keeps following
+  the car through a pinch, and after a drag it follows it again by itself. On a trip's map, hold a finger on the route
+  and slide it along to follow the trip point by point, or press play to watch the trip again at 60 times real time.
 - **Pull down to refresh** — on the Car tab, pull down for the car's data now: straight from the car, or the car hub
   (or bridge at home) connects to the car at once instead of waiting for its next look; when the car can't be reached
   it tries again first. On History, a pull brings the car hub's new trips and the latest charges and activity.

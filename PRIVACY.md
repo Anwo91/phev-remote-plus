@@ -1,6 +1,6 @@
 # PHEV Link — privacy policy
 
-*Last updated: 10 November 2026 (on a drive, your car hub also sends the phone that shows where the car is the car's speed, which way it is heading and the drive's route so far, for the live map; earlier: crash reports are off until you answer the one question the app asks about them, and your car hub follows your phone's answer; earlier: a trip one of your phones records on its own OBD adapter goes to your car hub and on to your other phones, and the car hub's push tells your phones when it has saved a trip; earlier: your car hub also pushes the car's state after each change, such as plugged in or charging finished, encrypted like the alerts, so your widget is up to date without your phone asking; your phone tells your car hub which kinds of alert you have ticked, so it pushes only those; earlier: smart charging at the places you choose, priced for that place; resets of learned values are shared between your devices; crash reports through Firebase Crashlytics, with the last log lines cleaned, and a switch to turn them off; instant alerts come by push, encrypted end to end, through Firebase Cloud Messaging and our push relay; where the car is, on the Car tab; earlier: your settings can be kept in Android's own backup, and saved to or restored from a file; the monthly costs can be saved as a spreadsheet; departures can come from your calendar; places you save, and the car arriving at and leaving them)*
+*Last updated: 14 November 2026 (the Google Play version no longer shows ads, and has no ads software in it; earlier, 10 November: on a drive, your car hub also sends the phone that shows where the car is the car's speed, which way it is heading and the drive's route so far, for the live map; earlier: crash reports are off until you answer the one question the app asks about them, and your car hub follows your phone's answer; earlier: a trip one of your phones records on its own OBD adapter goes to your car hub and on to your other phones, and the car hub's push tells your phones when it has saved a trip; earlier: your car hub also pushes the car's state after each change, such as plugged in or charging finished, encrypted like the alerts, so your widget is up to date without your phone asking; your phone tells your car hub which kinds of alert you have ticked, so it pushes only those; earlier: smart charging at the places you choose, priced for that place; resets of learned values are shared between your devices; crash reports through Firebase Crashlytics, with the last log lines cleaned, and a switch to turn them off; instant alerts come by push, encrypted end to end, through Firebase Cloud Messaging and our push relay; where the car is, on the Car tab; earlier: your settings can be kept in Android's own backup, and saved to or restored from a file; the monthly costs can be saved as a spreadsheet; departures can come from your calendar; places you save, and the car arriving at and leaving them)*
 
 PHEV Link is an app for the Mitsubishi Outlander PHEV (2014–2017), with an optional "bridge" (a small computer such as a
 Raspberry Pi) that you run at home. It is made by Anwo91, a sole proprietorship in Norway ("we").
@@ -10,7 +10,7 @@ car, your trips and your charging stays on your phone and on your own bridge. Th
 listed below, for the reasons given. The one piece of ours on the internet is a small push relay for instant alerts,
 which passes on alerts it can't read (they are encrypted for your phones) and keeps nothing. If you say yes to crash
 reports (the app asks once, and sends none until you answer), a crash report comes to us through Google's Firebase
-Crashlytics when the app crashes, with places, names and addresses taken out; you can switch that off again. The Google Play version also shows ads from Google until you buy PHEV Link Plus.
+Crashlytics when the app crashes, with places, names and addresses taken out; you can switch that off again. Neither version of the app shows ads.
 
 ## What the app uses, and where it goes
 
@@ -49,20 +49,13 @@ Crashlytics when the app crashes, with places, names and addresses taken out; yo
 | What the car cost month by month, as a spreadsheet (only when you ask) | So you can keep or work on your own figures | History → Trips → Month by month → Save as a spreadsheet writes a CSV file (per month: trips, km, fuel, electricity, costs) where you choose on your phone. Nothing is sent anywhere. Never to us. |
 | Update checks | To offer new versions | The GitHub version of the app, and the bridge, ask GitHub (github.com) for the newest release. GitHub sees your IP address. The Google Play version is updated by Google Play. |
 
-## Google Play version: purchases and ads
+## Google Play version: purchases
 
 **Purchases.** PHEV Link Plus and tips are bought through Google Play. Google handles the payment; we only learn from
 Google Play whether Plus has been bought (no name, address or payment details). See Google's privacy policy:
 https://policies.google.com/privacy
 
-**Ads.** Until PHEV Link Plus is bought, the Google Play version shows small ads from Google AdMob. To show ads, measure
-them and prevent fraud, Google's ads software on your phone collects information such as your device's advertising ID,
-your IP address and the approximate location derived from it, and how ads are shown and tapped. In the EEA, the UK and
-Switzerland, Google asks for your consent first (personalised ads, or not), and you can change your answer at any time
-under Settings → PHEV Link Plus → Ad privacy choices. You can also reset or delete your advertising ID in Android's
-settings. How Google uses this information: https://policies.google.com/technologies/partner-sites
-
-With PHEV Link Plus there are no ads, and the ads software is not started.
+**No ads.** Neither version shows ads, and neither has ads software in it, so your advertising ID is not used.
 
 ## How long it is kept
 
@@ -74,7 +67,7 @@ for us for 90 days. The push relay passes encrypted alerts on and keeps nothing.
 
 Under the GDPR you can ask for access to, correction or deletion of personal data about you. The only data from your phone we
 hold is crash reports, for 90 days, under a random installation id we can't link to you (switch crash reports off to
-stop them); for data collected by Google for ads and purchases, see Google's privacy policy and
+stop them); for data collected by Google for purchases, see Google's privacy policy and
 https://myaccount.google.com. You can also complain to the Norwegian Data Protection Authority (Datatilsynet).
 
 ## Children

@@ -72,7 +72,8 @@ Thanks to the OBDb contributors, whose work first showed where these values live
 
 - Map tiles © OpenStreetMap contributors, from https://tile.openstreetmap.org, shown under the Open Database License
   (https://www.openstreetmap.org/copyright). The app shows "© OpenStreetMap" on every map (tapping it opens that page),
-  sends its own user agent and keeps fetched tiles for 30 days, as the OpenStreetMap tile usage policy asks.
+  sends its own user agent, fetches only the tiles on screen (at most 4 at a time), keeps them for 30 days and then
+  asks again with If-Modified-Since, as the OpenStreetMap tile usage policy asks.
 
 ### Electricity prices (smart charging)
 

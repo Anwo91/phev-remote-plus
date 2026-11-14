@@ -96,9 +96,7 @@ The car hub joins the owner's tailnet with Tailscale's `tsnet` library, built fr
 
 ### Google Play version only
 
-- Google Mobile Ads SDK (`com.google.android.gms:play-services-ads`), Google User Messaging Platform
-  (`com.google.android.ump:user-messaging-platform`) and Google Play Billing Library
-  (`com.android.billingclient:billing`), © Google LLC — Android Software Development Kit License and the Google APIs
+- Google Play Billing Library (`com.android.billingclient:billing`), © Google LLC — Android Software Development Kit License and the Google APIs
   Terms of Service (https://developers.google.com/terms). Not in the GitHub build.
 
 ## In the bridge (`bridge/matter`)

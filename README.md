@@ -45,7 +45,7 @@ The main goal: **a connection that just works.**
   too. Recent drives count most; the drives are listed and can be forgotten. Everything the app learns from your own
   trips, charges and fill-ups (the range, the fuel correction, petrol use, charging speed, where the car stops charging,
   the power meter) is listed under Settings → Learned values, with a reset for each that reaches every phone, the car
-  hub and the bridge; History keeps every trip, charge and fill-up. With petrol: once an OBD drive has
+  hub and the bridge; a reset deletes no trip, charge or fill-up. With petrol: once an OBD drive has
   read the tank, the home screen also shows the total range — the tank (45 L) at what this car's engine burns
   (learned from the drives, else about 6.5 L/100 km; the petrol the engine spent charging the battery is left out, as
   that charge is driven on electricity and counts in the electric range). The forecast is always for where the car is: the car
@@ -84,10 +84,11 @@ The main goal: **a connection that just works.**
   cost uses one electricity price with charging: with a bridge, what charging at home cost this month (else the last
   7 days, else the price plan's fixed price or Norgespris); a price typed under Trips only without a bridge, or until
   home charging has a cost. Fill-ups are found by themselves (the tank 10 % or more higher at the start of a trip than
-  at the end of the one before): the app asks for the litres from the pump (a notification and a "Filled up?" card in
-  Trips; a fill-up can also be typed in or edited there, and its price per litre becomes the trips' fuel price). After
+  at the end of the one before): the app asks for the litres from the pump (a notification and a "Filled up?" question
+  on the Car tab's Fill-ups card; a fill-up can also be typed in or changed there, and its price per litre becomes the
+  trips' fuel price). The card shows only the newest fill-up; All fill-ups opens the Fill-ups page with every one. After
   two full tanks (filled until the pump clicks off, with every trip in between recorded) the trips' fuel and the
-  petrol range are corrected by the pump litres against what the app counted, shown under Trips → Fill-ups with each
+  petrol range are corrected by the pump litres against what the app counted, shown on the Fill-ups page with each
   tank. Shared between your phones through the bridge. Each engine start gets its likely reason
   (speed, hard acceleration, low battery, cold/heater, Charge or Save button), worked out from the readings, with a tip
   for keeping the engine off. **Stats** (on top of History → Activity) show what the car cost and used by
@@ -171,7 +172,7 @@ The main goal: **a connection that just works.**
 - **One-tap everywhere** — home-screen widget in three sizes (battery, electric range, charging, climate, next departure, lock; preheat, flash-lights and refresh buttons; old data dimmed), quick-settings tile
   ("Preheat"), and long-press app shortcuts (preheat, stop, flash lights, refresh).
 - **Swipe between tabs** — swipe left or right to move between Car, Plan, History, Health and Settings. On History and
-  Health the swipe goes through their own tabs on top first (Trips, Charging, Activity; Overview to Tools), then on to
+  Health the swipe goes through their own tabs on top first (Trips, Activity, Charging; Overview to Tools), then on to
   the next tab. Things you drag sideways (the 12 V graph, the 3D car) still turn and slide as before.
 - **Find my car** — flash the headlights.
 - **Alerts** — charging complete (or charged to your limit), charging stopped early (power cut, loose cable; not when

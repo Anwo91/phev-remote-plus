@@ -63,6 +63,9 @@ The main goal: **a connection that just works.**
   cabin comes from the car hub: the car's own sensor right after a drive, else the car hub's own temperature, corrected at
   every drive start. Outside is the car's sensor after a drive, else the MET Norway forecast for where the car is (the car
   hub's location, else where a phone was on the car's Wi-Fi), with a run time you can make shorter or longer (Settings → Smart climate run time; the one-tap climate's time follows it too: 10, 20 or 30 min when the weather doesn't pick it). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
+  **1 hour while plugged in**: the car runs the climate 30 minutes at a time, so with the car plugged in the car hub
+  (or bridge) starts it again when a run ends, for a full hour on the Car tab or the last hour before a departure
+  ("A full hour when plugged in"); the power then comes from the cable. Not plugged in, a departure uses its usual time.
 - **Activity** — who did what with the car (each phone by the name you give it, also when used right next to the
   car) and what the car did: plugged in/out, charging started/stopped and why, every 10 %, a summary per charge
   (from → to %, time, ≈ kWh), climate, locks, doors, lights, power switch, alarm, and the car's clock when it is moved

@@ -58,14 +58,16 @@ The main goal: **a connection that just works.**
   charging). Tap a part to see what it means and act on it — switch the lights off, start climate, charge now; hold it
   for a large view. Three styles (Settings → Appearance): from above, from the side, or a 3D model you turn with a
   finger (and tilt in the large view). What can be tapped shows as icons, as labels, or lights up when touched.
-- **Climate** — heat, cool or defrost for 10/20/30 minutes; **Smart** mode picks mode and duration from the cabin and
+- **Climate** — heat, cool or defrost for 10/20/30 minutes, or 60 while plugged in; **Smart** mode picks mode and duration from the cabin and
   outside temperatures (cools by the cabin; heats or defrosts by the colder of the two; says so when nothing is needed). The
   cabin comes from the car hub: the car's own sensor right after a drive, else the car hub's own temperature, corrected at
   every drive start. Outside is the car's sensor after a drive, else the MET Norway forecast for where the car is (the car
-  hub's location, else where a phone was on the car's Wi-Fi), with a run time you can make shorter or longer (Settings → Smart climate run time; the one-tap climate's time follows it too: 10, 20 or 30 min when the weather doesn't pick it). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
+  hub's location, else where a phone was on the car's Wi-Fi), with a run time you can make shorter or longer (Settings → Smart climate run time; the one-tap climate's time follows it too: 10, 20 or 30 min when the weather doesn't pick it, or 60 min while plugged in, chosen in Settings → One-tap climate). Handles "stopped by the car" (door opened / battery low) with a one-tap reset.
   **1 hour while plugged in**: the car runs the climate 30 minutes at a time, so with the car plugged in the car hub
-  (or bridge) starts it again when a run ends, for a full hour on the Car tab or the last hour before a departure
-  ("A full hour when plugged in"); the power then comes from the cable. Not plugged in, a departure uses its usual time.
+  (or bridge) starts it again when a run ends: "60 min" wherever a climate time is picked (the Car tab, a departure's
+  last hour, the one-tap climate for the widget, quick tile and shortcuts, Google Home and Home Assistant); the power
+  then comes from the cable. Where it can't run now, the app says why beside it. Not plugged in, it runs the car's own
+  30 min (a smart departure: the weather's time).
 - **Activity** — who did what with the car (each phone by the name you give it, also when used right next to the
   car) and what the car did: plugged in/out, charging started/stopped and why, every 10 %, a summary per charge
   (from → to %, time, ≈ kWh), climate, locks, doors, lights, power switch, alarm, and the car's clock when it is moved
@@ -467,7 +469,7 @@ What the car brings into Home Assistant (names in the app's language):
 | Diagnostic sensors | 12 V battery (now and at rest, and its state), drive battery health and capacity, cell spread, fault codes (the codes as an attribute), health checked (filled in by the car hub's OBD adapter) |
 | Binary sensors | charging, charging cable, lock, doors (each door as an attribute), theft alarm, switched on, at home, bridge link |
 | Switches | climate (mode from the shared one-tap choice, time from the smart climate run time, or the weather when smart), headlights, parking lights |
-| Selects | climate mode, climate time (10, 20 or 30 min = the smart climate run time shorter, normal or longer, shared with the phones) |
+| Selects | climate mode, climate time (10, 20 or 30 min = the smart climate run time shorter, normal or longer, shared with the phones; 60 min = an hour while plugged in, the car's 30 min when not) |
 | Buttons | charge now, charge on timer, flash lights, refresh |
 | Event | "Car event": charge_started, charge_finished, charge_stopped, plugged, unplugged, climate_on/off/cancelled, alarm, locked, unlocked, door_open, doors_closed, car_home, car_away, departure_started/failed, left_unlocked, door_left_open, lights_left_on, command_failed, car_health, bridge_offline, … |
 
